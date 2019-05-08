@@ -182,7 +182,7 @@
             alert('两次填写的收款账号不同');
             return false;
         }
-        $.post("./index.php?i=2&c=entry&m=ewei_shopv2&do=mobile&r=member.withdraw.post",{
+        $.post(".post",{
             "money":money,
             "realname":realname,
             "alipay":alipay
