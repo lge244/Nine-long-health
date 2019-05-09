@@ -118,6 +118,10 @@ class Op_EweiShopV2Page extends MobileLoginPage
                     pdo_insert('ewei_shop_fitness',$data);
                 }
             }
+            if ($goods_list['upgrade'] == 0){
+                $upgrade = 1;
+            }
+
         }
 
         $order= pdo_getall('ewei_shop_order', array( "openid" => $_W['openid'],"status"=>3), array('id'));
@@ -130,7 +134,7 @@ class Op_EweiShopV2Page extends MobileLoginPage
         }
         $curriculum = count(pdo_getall('ewei_shop_curriculum',array('status'=>1,'openid'=>$_W['openid'])));
 
-        if ($order_Num >= 2 && $_W['ewei_shopv2_member']['level'] == 0 && $curriculum >= 2 ) {
+        if ($order_Num >= 2 && $_W['ewei_shopv2_member']['level'] == 0 && $curriculum >= 2 && $upgrade >= 1) {
           if($_W['ewei_shopv2_member']['fid'] >0){
                  $f_member = pdo_get('ewei_shop_member', array('id' => $_W['ewei_shopv2_member']['fid']), array('id', 'level', 'invite', 'brokerage', 'fid'));
                 if($f_member['level'] >= 5 ){ 

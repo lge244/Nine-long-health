@@ -33,6 +33,53 @@ class Index_EweiShopV2Page extends WebPage
        $data['status'] = $_GPC['status'];
        $data['schooltime'] = time();
        $res = pdo_insert('ewei_shop_curriculum',$data);
+       $id = pdo_insertid();
+       if ($data['status'] == 1){
+           $curriculums = pdo_get('ewei_shop_curriculum',array('id'=>$id));
+
+           $member = pdo_get('ewei_shop_member',array('openid'=>$curriculums['openid']));
+
+           $order= pdo_getall('ewei_shop_order', array( "openid" => $curriculums['openid'],"status"=>3), array('id'));
+           $order_Num = 0;
+           foreach ($order as $k=>$v){
+               $orderNum = pdo_getall('ewei_shop_order_goods',array('orderid'=>$v['id']),array('total'));
+               foreach ($orderNum as $key=>$value){
+                   $order_Num +=$value['total'];
+               }
+           }
+           $goods = pdo_getall('ewei_shop_order_goods',array('openid'=>$curriculums['openid']),array('goodsid','total'));
+           foreach ($goods as $k=>$v){
+               $goods_list = pdo_get('ewei_shop_goods',array('id'=>$v['goodsid']));
+               if ($goods_list['upgrade'] == 0){
+                   $upgrade = 1;
+               }
+           }
+
+           $curriculum = count(pdo_getall('ewei_shop_curriculum',array('status'=>1,'openid'=>$curriculums['openid'])));
+
+           if ($order_Num >= 2 && $member['level'] == 0 && $curriculum >= 2 && $upgrade >= 1) {
+               if($member['fid'] >0){
+                   $f_member = pdo_get('ewei_shop_member', array('id' => $member['fid']), array('id', 'level', 'invite', 'brokerage', 'fid'));
+                   if($f_member['level'] >= 5 ){
+                       $invite = $f_member['invite'] + 1;
+                       $brokerage = $f_member['brokerage'] + 200;
+                       pdo_update('ewei_shop_member', array('level' => 1), array('id' => $member['id']));
+                       $a = pdo_update('ewei_shop_member', array('invite' => $invite, 'brokerage' => $brokerage), array('id' => $member['fid']));
+                   }else{
+                       $invite = $f_member['invite'] + 1;
+                       $brokerage = $f_member['brokerage'] + 100;
+                       pdo_update('ewei_shop_member', array('level' => 1), array('id' => $member['id']));
+                       $a = pdo_update('ewei_shop_member', array('invite' => $invite, 'brokerage' => $brokerage), array('id' => $member['fid']));
+                       if ($f_member['level'] < 5) {
+                           $this->acquire($f_member);
+                       }
+                   }
+               }else{
+                   pdo_update('ewei_shop_member', array('level' => 1), array('id' => $member['id']));
+               }
+           }
+
+       }
        if ($res){
            exit(json_encode(array('code'=>0,'msg'=>'添加成功')));
        }
@@ -59,9 +106,18 @@ class Index_EweiShopV2Page extends WebPage
                 $order_Num +=$value['total'];
             }
         }
+        $goods = pdo_getall('ewei_shop_order_goods',array('openid'=>$curriculums['openid']),array('goodsid','total'));
+        foreach ($goods as $k=>$v){
+            $goods_list = pdo_get('ewei_shop_goods',array('id'=>$v['goodsid']));
+            if ($goods_list['upgrade'] == 0){
+                $upgrade = 1;
+            }
+
+        }
+
         $curriculum = count(pdo_getall('ewei_shop_curriculum',array('status'=>1,'openid'=>$curriculums['openid'])));
 
-        if ($order_Num >= 2 && $member['level'] == 0 && $curriculum >= 2 ) {
+        if ($order_Num >= 2 && $member['level'] == 0 && $curriculum >= 2 && $upgrade >= 1) {
             if($member['fid'] >0){
                 $f_member = pdo_get('ewei_shop_member', array('id' => $member['fid']), array('id', 'level', 'invite', 'brokerage', 'fid'));
                 if($f_member['level'] >= 5 ){
