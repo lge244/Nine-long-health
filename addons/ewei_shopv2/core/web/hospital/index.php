@@ -30,7 +30,6 @@ class Index_EweiShopV2Page extends WebPage
 			'phone'   => $_GPC['phone'],
 			'address' => $_GPC['address']
 		];
-
 		if (empty($data['name']) || empty($data['phone']) || empty($data['address'])) $this->message('请将信息填写完整');
 		if (!preg_match("/^1[3456789]\d{9}$/", $data['phone'])) $this->message('请填写正确的手机号码');
 		if (empty($id)) {
