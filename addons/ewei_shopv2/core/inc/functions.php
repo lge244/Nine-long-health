@@ -2,31 +2,32 @@
 if (!(defined('IN_IA'))) {
 	exit('Access Denied');
 }
-if (!(function_exists('isGet'))) {
-	function isGet()
+if (!function_exists('is_post')) {
+	function is_post()
 	{
-		return $_SERVER['REQUEST_METHOD'] == 'GET' ? true : false;
-	}
-}
-if (!(function_exists('isAjax'))) {
-	function isAjax()
-	{
-		if (isset($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') {
-			return true;
-		} else {
-			return false;
-		}
-
-	}
-}
-if (!(function_exists('isPost'))) {
-	function isPost()
-	{
-		return ($_SERVER['REQUEST_METHOD'] == 'POST' && checkurlHash($GLOBALS['verify'])
-			&& (empty($_SERVER['HTTP_REFERER']) || preg_replace("~https?:\/\/([^\:\/]+).*~i", "\\1", $_SERVER['HTTP_REFERER']) == preg_replace("~([^\:]+).*~", "\\1", $_SERVER['HTTP_HOST']))) ? 1 : 0;
+		return isset($_SERVER['REQUEST_METHOD']) && strtoupper($_SERVER['REQUEST_METHOD']) == 'POST';
 	}
 }
 
+/**
+ * @todo: 判断是否为get
+ */
+if (!function_exists('is_get')) {
+	function is_get()
+	{
+		return isset($_SERVER['REQUEST_METHOD']) && strtoupper($_SERVER['REQUEST_METHOD']) == 'GET';
+	}
+}
+
+/**
+ * @todo: 判断是否为ajax
+ */
+if (!function_exists('is_ajax')) {
+	function is_ajax()
+	{
+		return isset($_SERVER['HTTP_X_REQUESTED_WITH']) && strtoupper($_SERVER['HTTP_X_REQUESTED_WITH']) == 'XMLHTTPREQUEST';
+	}
+}
 if (!(function_exists('m'))) {
 	function m($name = '')
 	{

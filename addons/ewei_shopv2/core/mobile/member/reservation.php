@@ -74,8 +74,9 @@ class Reservation_EweiShopV2Page extends MobileLoginPage
 	{
 		global $_GPC;
 		global $_W;
-		if (isPost()) {
+		if (is_post()) {
 			echo 1;
+			die;
 		}
 		include $this->template();
 	}
