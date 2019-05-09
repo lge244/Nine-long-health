@@ -40,17 +40,21 @@
          data-addressid="">
         <div  class="fui-list" >
             <div class="fui-list-inner">
-                <div class="title"><span class='realname'><?php  echo $row['username'];?></span> <span class='mobile'><?php  echo $row['phone'];?></span>
+                <div class="title"><span class='realname'><?php  echo $row['username'];?></span> <span class='mobile' style="margin-right: 20px;"><?php  echo $row['phone'];?></span>
                     <?php  if($row['status'] == 0) { ?>
-                    <span style="color: red; margin-left: 20px;">尚未联系</span>
+                    <span style="color: red">尚未联系</span>
                     <?php  } else { ?>
                     <?php  if($row['status'] == 1) { ?>
-                    <span style="color: #0A8CD2;margin-left: 20px; ">已联系</span>
+                    <span style="color: #0A8CD2">已联系</span>
                     <?php  } else { ?>
                     <?php  if($row['status'] == 2) { ?>
-                    <span style="color: #7A3993;margin-left: 20px; ">已保</span>
+                    <span style="color: #7A3993">已保</span>
                     <?php  } else { ?>
-                    <span style="color: #495066;margin-left: 20px; ">已关闭</span>
+                    <?php  if($row['status'] == 3) { ?>
+                    <span style="color: #495066">已关闭</span>
+                    <?php  } else { ?>
+                    <span style="color: #0c7784">已完成</span>
+                    <?php  } ?>
                     <?php  } ?>
                     <?php  } ?>
                     <?php  } ?>
@@ -59,16 +63,19 @@
                     <span class='address'><?php  echo $row['address'];?></span>
                 </div>
                 <div class='bar' >
+                    <?php  if($row['status'] == 4) { ?>
+                    <?php  } else { ?>
 			<span class='pull-right'>
                 <?php  if($row['status'] == 2) { ?>
 			    <a class="" href="<?php  echo mobileUrl('member/insurance/backfill',array('id'=>$row['id']))?>" data-nocache="true">
-				<i class='icon icon-edit2'></i> 反馈
+				<i class='icon icon-edit2'></i>回填
 			    </a>
 			    &nbsp;&nbsp;<?php  } ?>
 			    <a data-toggle='delete' class='external' href="JavaScript:;" data-id="<?php  echo $row['id'];?>">
 				<i class='icon icon-delete'></i> 关闭
 			    </a>
 			</span>
+                    <?php  } ?>
                 </div>
             </div>
         </div>

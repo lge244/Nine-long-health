@@ -321,6 +321,7 @@ if( $_W["ispost"] )
 	$data["pcates"] = implode(",", $pcates);
 	$data["ccates"] = implode(",", $ccates);
 	$data["tcates"] = implode(",", $tcates);
+    $data["upgrade"] = (int)intval($_GPC['upgrade']);
 	$data["content"] = m("common")->html_images($_GPC["content"]);
 	$data["buycontent"] = m("common")->html_images($_GPC["buycontent"]);
 	if( p("commission") ) 
@@ -606,6 +607,7 @@ if( $_W["ispost"] )
 			$data["opencard"] = $opencard;
 		}
 		$data["verifygoodsnum"] = intval($verifygoodsnum);
+		$data["upgrade"] = (int)intval($_GPC['upgrade']);
 		$data["verifygoodslimittype"] = intval($verifygoodslimittype);
 		$data["verifygoodsdays"] = intval($verifygoodsdays);
 		$data["verifygoodslimitdate"] = intval($verifygoodslimitdate);

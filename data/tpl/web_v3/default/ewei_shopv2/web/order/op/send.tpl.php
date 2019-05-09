@@ -12,6 +12,7 @@
                 <h4 class="modal-title"><?php  if($edit_flag==1) { ?>修改物流信息<?php  } else { ?>订单发货<?php  } ?></h4>
             </div>
             <div class="modal-body">
+				<div class="pick">
                    	<div class="form-group">
 						<label class="col-sm-2 control-label">收 货 人</label>
 						<div class="col-sm-9 col-xs-12">
@@ -21,7 +22,7 @@
 							</div>
 						</div>
 					</div>
-                                
+
 					<div class="form-group">
 						<label class="col-sm-2 control-label">快递公司</label>
 						<div class="col-sm-9 col-xs-12">
@@ -40,12 +41,14 @@
 							<input type="text" name="expresssn" class="form-control" <?php  if($item['city_express_state']==1) { ?>disabled="disabled"<?php  } ?> value="<?php  echo $item['expresssn'];?>" data-rule-required='true' />
 						</div>
 					</div>
+				</div>
 				<?php  if($order_goods) { ?>
 					<div class="form-group">
 						<label class="col-sm-2 control-label">发货类型</label>
 						<div class="col-sm-9 col-xs-12">
 							<label class="radio-inline"><input type="radio" name="sendtype" value="0" <?php  if($item['sendtype']>0) { ?>disabled="disabled"<?php  } ?>  <?php  if(empty($item['sendtype'])) { ?>checked="true"<?php  } ?>  <?php  if($item['city_express_state']==1) { ?>disabled="disabled"<?php  } ?>/> 按订单发货</label>
 							<label class="radio-inline"><input type="radio" name="sendtype" value="1" <?php  if($item['sendtype']>0) { ?>disabled="disabled"<?php  } ?> <?php  if($item['sendtype']>0) { ?>checked="true"<?php  } ?>     <?php  if($item['city_express_state']==1) { ?>disabled="disabled"<?php  } ?>/> 商品分包裹发货</label>
+							<label class="radio-inline"><input type="radio" name="sendtype" value="2" <?php  if($item['sendtype']>0) { ?>disabled="disabled"<?php  } ?> <?php  if($item['sendtype']>0) { ?>checked="true"<?php  } ?>     <?php  if($item['city_express_state']==1) { ?>disabled="disabled"<?php  } ?>/> 自提商品</label>
 							<span class="help-block">选择商品发货类型</span>
 						</div>
 					</div>
@@ -185,10 +188,16 @@
 
 	$("input[name=sendtype]").off("click").on("click",function(){
 		window.sendtype = $(this).val();
+
 		if(window.sendtype==1){
 			$(".sendpress").show();
 		}else{
 			$(".sendpress").hide();
+		}
+		if(window.sendtype==2){
+			$(".pick").hide();
+		}else{
+			$(".pick").show();
 		}
 	});
 

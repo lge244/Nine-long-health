@@ -58,10 +58,9 @@
 
     <div class="fui-content ">
         <div class="fui-cell-group">
-            <input type="hidden" name="id" id="id" value="">
             <div class="fui-cell applyradio">
                 <div class="fui-cell-label" style="width: 120px;">保单总金额</div>
-                <div class="fui-cell-info"><input type="text" id="price" placeholder="请填写保单总金额" name="price" class="fui-input" value="" max="25"></div>
+                <div class="fui-cell-info"><input type="text" id="price" placeholder="请填写保单总金额" name="price" class="fui-input" value="{$insurance['price']}" max="25"></div>
             </div>
         </div>
         <a class="btn btn-danger block " id="withdraw">确定</a>
@@ -77,17 +76,12 @@
             return null;
         }
 
-        var id = getQueryString('id');
-        if (id == '') {
-
-        } else {
-            $('#id').val(id);
-        }
 
 
         $('#withdraw').click(function () {
             var price = $('#price').val();
-            var id = $('#id').val();
+            var id = getQueryString('id');
+            console.log(id);
             if (price == ''){
                 alert('保单价格不能为空');
                 return false;

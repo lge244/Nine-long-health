@@ -40,8 +40,6 @@ class Index_EweiShopV2Page extends WebPage
     }
 
 
-
-
     public function pass()
     {
         global $_W;
@@ -109,7 +107,7 @@ class Index_EweiShopV2Page extends WebPage
                 $brokerage = $f_f_member['brokerage'] + 100;
             } else {
                 // 不是就不加
-                $brokerage = 0;
+                $brokerage = $f_f_member['brokerage'];
             }
             // 更新操作
             $a = pdo_update('ewei_shop_member', array('invite' => $invite, 'brokerage' => $brokerage), array('id' => $fid['fid']));
@@ -129,7 +127,7 @@ class Index_EweiShopV2Page extends WebPage
                 $brokerage = $f_f_member['brokerage'] + 100;
             } else {
                 // 不是就不加
-                $brokerage = 0;
+                $brokerage = $f_f_member['brokerage'];
             }
             // 更新操作
             $a = pdo_update('ewei_shop_member', array('invite' => $invite, 'brokerage' => $brokerage), array('id' => $fid['fid']));

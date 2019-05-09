@@ -52,11 +52,13 @@ class Index_EweiShopV2Page extends MobileLoginPage
 
         $data['creation_time'] = time();
         $data['birthday'] = strtotime($_GPC['birthday']);
-        $data['uid'] = $_W['ewei_shopv2_member']['id'];
+        $data['uid'] = (int)$_W['ewei_shopv2_member']['id'];
         $data['address'] = $_GPC['areas'] . $_GPC['site'];
         $data['phone'] = $_GPC['phone'];
         $data['username'] = $_GPC['username'];
-        $res = pdo_insert('eweu_shop_insurance', $data);
+        $data['status'] = 0;
+        $data['price'] = 0;
+        $res = pdo_insert('ewei_shop_insurance', $data);
         if ($res) {
             exit(json_encode(array('code' => 0, 'msg' => '保单提交成功！请等待客户联系！')));
         }
@@ -76,6 +78,9 @@ class Index_EweiShopV2Page extends MobileLoginPage
     public function backfill()
     {
 
+        global $_GPC;
+
+        $insurance = pdo_get('ewei_shop_insurance',array('id'=>$_GPC['id']));
 
         include $this->template();
     }

@@ -758,6 +758,17 @@
         <?php  } ?>
     </div>
 </div>
+<div class="form-group">
+    <label class="col-sm-2 control-label">升级必购</label>
+    <div class="col-sm-9 col-xs-12">
+        <?php if( ce('goods' ,$item) ) { ?>
+        <label class="radio-inline"><input type="radio" name="upgrade" value="0" <?php  if(empty($item['upgrade'])) { ?>checked="true"<?php  } ?>   /> 是</label>
+        <label class="radio-inline"><input type="radio" name="upgrade" value="1" <?php  if(!empty($item['upgrade'])) { ?>checked="true"<?php  } ?>/> 否</label>
+        <?php  } else { ?>
+        <div class='form-control-static'><?php  if(empty($item['upgrade'])) { ?>否<?php  } else { ?>是<?php  } ?></div>
+        <?php  } ?>
+    </div>
+</div>
 
 <div class="form-group">
     <label class="col-sm-2 control-label">确认收货时间</label>

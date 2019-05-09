@@ -652,15 +652,8 @@ class System_EweiShopV2Model {
                 "icon" => "store",
                 "items" => array(
                     array(
-                        "title" => "管理员",
-                        "extend" => "admins.list",
-                        "perm" => "amdins.main",
-                        "desc" => "管理员管理"
-                    ),
-                    array(
-                        "title" => "权限",
-                        "route" => "job",
-                        "desc" => "权限管理"
+                        "title" => "会员列表",
+                        "desc" => "会员列表"
                     )
                 )
             ),

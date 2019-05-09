@@ -129,7 +129,11 @@
                         {if $row['status'] == 2}
                         <span style="color: #7A3993">已保</span>
                         {else}
+                        {if $row['status'] == 3}
                         <span style="color: #495066">已关闭</span>
+                        {else}
+                        <span style="color: #0c7784">已完成</span>
+                        {/if}
                         {/if}
                         {/if}
                         {/if}
@@ -146,14 +150,14 @@
                                         <i class='icow icow-moban162'></i>
                                    </span>
                     </a>
-                        <a class='btn  btn-op btn-operation' id="close" href="#" data-id="{$row['id']}">
+                        <a class='btn  btn-op btn-operation close2' id="close" href="#" data-id="{$row['id']}">
                                    <span data-toggle="tooltip" data-placement="top" title="" data-original-title="关闭">
                                         <i class='icow icow-kaishi1'></i>
                                    </span>
                     </a>
-                        <a class='btn  btn-op btn-operation' id="confirm" href="#" data-id="{$row['id']}">
+                        <a class='btn  btn-op btn-operation confirm' href="#" data-id="{$row['id']}">
                                    <span data-toggle="tooltip" data-placement="top" title="" data-original-title="核实">
-                                        <i class='icow icow-kaishi1'></i>
+                                        <i class='icow icow-onlinepay'></i>
                                    </span>
                     </a>
 
@@ -192,7 +196,7 @@
         }, 'json')
     }
 
-    $('#close').click(function () {
+    $('.close2').click(function () {
         var id = $(this).attr('data-id');
         $.post("{php echo webUrl('insurance/close')}",{id:id},function (res) {
             if (res.code == 0) {
@@ -203,9 +207,9 @@
             }
         },'json')
     })
-    $('#confirm').click(function () {
+    $('.confirm').click(function () {
         var id = $(this).attr('data-id');
-        $.post("{php echo webUrl('insurance/close')}",{id:id},function (res) {
+        $.post("{php echo webUrl('insurance/confirm')}",{id:id},function (res) {
             if (res.code == 0) {
                 tip.msgbox.suc(res.msg);
                 window.location.reload();

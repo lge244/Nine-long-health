@@ -108,6 +108,16 @@ class Op_EweiShopV2Page extends MobileLoginPage
                     pdo_insert('ewei_shop_curriculum',$data);
                 }
             }
+            if ($goods_list['pcate'] == 1176){
+                $data['openid'] = $order['openid'];
+                $data['schooltime'] = time();
+                $data['goodsid'] = $goods_list['id'];
+                $data['title'] = $goods_list['title'];
+                $data['status'] = 0;
+                for ($i = 1;$i<=$v['total'];$i++){
+                    pdo_insert('ewei_shop_fitness',$data);
+                }
+            }
         }
 
         $order= pdo_getall('ewei_shop_order', array( "openid" => $_W['openid'],"status"=>3), array('id'));
@@ -124,7 +134,7 @@ class Op_EweiShopV2Page extends MobileLoginPage
           if($_W['ewei_shopv2_member']['fid'] >0){
                  $f_member = pdo_get('ewei_shop_member', array('id' => $_W['ewei_shopv2_member']['fid']), array('id', 'level', 'invite', 'brokerage', 'fid'));
                 if($f_member['level'] >= 5 ){ 
-            $invite = $f_member['invite'] + 1;
+                $invite = $f_member['invite'] + 1;
                  $brokerage = $f_member['brokerage'] + 200;
              	 pdo_update('ewei_shop_member', array('level' => 1), array('id' => $_W['ewei_shopv2_member']['id']));
                  $a = pdo_update('ewei_shop_member', array('invite' => $invite, 'brokerage' => $brokerage), array('id' => $_W['ewei_shopv2_member']['fid']));
@@ -237,7 +247,7 @@ class Op_EweiShopV2Page extends MobileLoginPage
                 $brokerage = $f_f_member['brokerage'] + 100;
             } else {
                 // 不是就不加
-                $brokerage = 0;
+                $brokerage = $f_f_member['brokerage'];
             }
             // 更新操作
             $a = pdo_update('ewei_shop_member', array('invite' => $invite, 'brokerage' => $brokerage), array('id' => $fid['fid']));
@@ -257,7 +267,7 @@ class Op_EweiShopV2Page extends MobileLoginPage
                 $brokerage = $f_f_member['brokerage'] + 100;
             } else {
                 // 不是就不加
-                $brokerage = 0;
+                $brokerage = $f_f_member['brokerage'];
             }
             // 更新操作
             $a = pdo_update('ewei_shop_member', array('invite' => $invite, 'brokerage' => $brokerage), array('id' => $fid['fid']));

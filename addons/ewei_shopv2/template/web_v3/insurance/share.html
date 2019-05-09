@@ -24,12 +24,12 @@
         <div class="col-sm-9 col-xs-12">
             <div class='input-group fixsingle-input-group'>
                 <span class='input-group-addon'>管理者分润比例</span>
-                <input type="number" name="ordermoney" class="form-control" value="{$level['ordermoney']}"/>
+                <input type="number" name="custodian_ratio" id="custodian_ratio" class="form-control" value="{$ratio['custodian_ratio']}"/>
                 <span class='input-group-addon'>%</span>
             </div>
             <div class='input-group fixsingle-input-group' style="margin-top: 5px;">
                 <span class='input-group-addon'>推荐人分润比例</span>
-                <input type="number" name="ordernum" class="form-control" value="{$level['ordercount']}"/>
+                <input type="number" name="referrer_ratio" id="referrer_ratio" class="form-control" value="{$ratio['referrer_ratio']}"/>
                 <span class='input-group-addon'>%</span>
             </div>
         </div>
@@ -38,15 +38,32 @@
     <div class="form-group">
         <label class="col-lg control-label"></label>
         <div class="col-sm-9 col-xs-12">
-            <input type="submit" value="提交" class="btn btn-primary"/>
-            <input type="button" name="back" onclick='history.back()' {ifp
-            'member.level.add|member.level.edit'}style='margin-left:10px;'{/if} value="返回列表" class="btn btn-default" />
+            <input type="submit" value="保存" class="btn btn-primary submit"/>
         </div>
-
     </div>
-
-
 </div>
 
 {template '_footer'}
+<script>
+    $('.submit').click(function () {
+        var custodian_ratio = $('#custodian_ratio').val();
+        var referrer_ratio = $('#referrer_ratio').val();
 
+        if (referrer_ratio == 0 || custodian_ratio == 0){
+            tip.msgbox.suc("分润比例不能为零！");
+            return false;
+        }
+
+        $.post("{php echo webUrl('insurance/share/add')}",{
+            "custodian_ratio":custodian_ratio,
+            "referrer_ratio":referrer_ratio,
+        },function (res) {
+           if(res.code == 0){
+               tip.msgbox.suc(res.msg)
+               window.location.reload();
+           }else{
+               tip.msgbox.suc(res.msg)
+           }
+        },'json')
+    })
+</script>
