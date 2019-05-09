@@ -1,29 +1,234 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a701d574-fe47-4661-abe0-57512a43e714" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/addons/ewei_shopv2/core/web/fitness/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/fitness/index.html" afterDir="false" />
+    <list default="true" id="a701d574-fe47-4661-abe0-57512a43e714" name="Default Changelist" comment="Merge branch 'master' of https://github.com/lge244/Nine-long-health&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;addons/ewei_shopv2/core/model/system.php&#10;#&#9;data/tpl/app/ewei_shopv2/default/mobile/member/insurance/backfill.tpl.php&#10;#&#9;data/tpl/web_v3/default/ewei_shopv2/web/goods/tab/basic.tpl.php&#10;#&#9;data/tpl/web_v3/default/ewei_shopv2/web/insurance.tpl.php&#10;#&#9;data/tpl/web_v3/default/ewei_shopv2/web/insurance/share.tpl.php&#10;#&#9;data/tpl/web_v3/default/ewei_shopv2/web/order/op/send.tpl.php">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addons/ewei_shopv2/core/mobile/member/reservation.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addons/ewei_shopv2/core/web/hospital/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addons/ewei_shopv2/core/web/hospital/reservation.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addons/ewei_shopv2/data/qrcode/2/0b753da175c91341812c1d2e8f60958a.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addons/ewei_shopv2/data/qrcode/2/1b3e3d641a707d1f84a3a7890a3d7d6c.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addons/ewei_shopv2/data/qrcode/2/2e57babec1a4365ce8a933adf2c465d7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addons/ewei_shopv2/data/qrcode/2/91af5655d0c430dde68b994d8339d956.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addons/ewei_shopv2/data/qrcode/2/fdf2da4e995126ed0a8f1b26998c3414.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addons/ewei_shopv2/template/mobile/default/member/reservation/backfill.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addons/ewei_shopv2/template/mobile/default/member/reservation/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addons/ewei_shopv2/template/mobile/default/member/reservation/record.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/hospital/index/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/hospital/index/post.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/hospital/reservation/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/tpl/app/ewei_shopv2/default/mobile/member/reservation.tpl.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/tpl/app/ewei_shopv2/default/mobile/member/reservation/backfill.tpl.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/tpl/app/ewei_shopv2/default/mobile/member/reservation/record.tpl.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/hospital/reservation/index.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/hmj.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/core/mobile/member/insurance/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/core/mobile/member/insurance/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/core/mobile/order/op.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/core/mobile/order/op.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/core/model/system.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/core/model/system.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/core/web/goods/post.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/core/web/goods/post.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/core/web/insurance/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/core/web/insurance/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/core/web/insurance/share.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/core/web/insurance/share.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/core/web/training/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/core/web/training/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/template/mobile/default/member/insurance/backfill.html" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/template/mobile/default/member/insurance/backfill.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/template/mobile/default/member/insurance/record.html" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/template/mobile/default/member/insurance/record.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/goods/tab/basic.html" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/goods/tab/basic.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/insurance/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/insurance/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/insurance/share.html" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/insurance/share.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/order/op/send.html" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/order/op/send.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/tpl/app/ewei_shopv2/default/mobile/member/insurance/backfill.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/data/tpl/app/ewei_shopv2/default/mobile/member/insurance/backfill.tpl.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/tpl/app/ewei_shopv2/default/mobile/member/insurance/record.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/data/tpl/app/ewei_shopv2/default/mobile/member/insurance/record.tpl.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/goods/tab/basic.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/goods/tab/basic.tpl.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/insurance.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/insurance.tpl.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/insurance/share.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/insurance/share.tpl.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/order/op/send.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/order/op/send.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/core/inc/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/core/inc/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/core/model/system.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/pcsite/static/js/jquery-1.11.1.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/pcsite/static/js/jquery-1.11.1.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/live/static/js/cyberplayer.js" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/live/static/js/cyberplayer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/pc/template/mobile/default/static/js/jquery.infinitescroll.js" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/pc/template/mobile/default/static/js/jquery.infinitescroll.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/pc/template/mobile/default/static/js/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/pc/template/mobile/default/static/js/jquery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/pc/template/mobile/default/static/layer/mobile/layer.js" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/pc/template/mobile/default/static/layer/mobile/layer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/pc/template/web/static/js/jquery.infinitescroll.js" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/pc/template/web/static/js/jquery.infinitescroll.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/pc/template/web/static/js/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/plugin/pc/template/web/static/js/jquery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/static/js/dist/jquery/jquery-1.11.1.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/static/js/dist/jquery/jquery-1.11.1.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/template/mobile/default/member/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/template/mobile/default/member/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/template/mobile/default/member/recharge.html" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/template/mobile/default/member/recharge.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/template/mobile/default/static/sendticket/js/jquery-1.7.2.js" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/template/mobile/default/static/sendticket/js/jquery-1.7.2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/resource/js/app/util.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/resource/js/app/util.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/resource/js/lib/jquery-1.11.1.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/resource/js/lib/jquery-1.11.1.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/data/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/ewei_shopv2/default/mobile/_account.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/ewei_shopv2/default/mobile/download.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/ewei_shopv2/default/mobile/goods.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/ewei_shopv2/default/mobile/goods/detail.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/ewei_shopv2/default/mobile/goods/picker.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/ewei_shopv2/default/mobile/goods/wholesalePicker.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/ewei_shopv2/default/mobile/member.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/data/tpl/app/ewei_shopv2/default/mobile/member.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/ewei_shopv2/default/mobile/member/address.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/ewei_shopv2/default/mobile/member/address/post.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/ewei_shopv2/default/mobile/member/cart.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/ewei_shopv2/default/mobile/member/changepwd.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/ewei_shopv2/default/mobile/member/favorite.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/ewei_shopv2/default/mobile/member/fullback.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/ewei_shopv2/default/mobile/member/history.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/ewei_shopv2/default/mobile/member/info.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/ewei_shopv2/default/mobile/member/insurance.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/ewei_shopv2/default/mobile/member/log.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/ewei_shopv2/default/mobile/member/recharge.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/ewei_shopv2/default/mobile/member/share.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/ewei_shopv2/default/mobile/order.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/ewei_shopv2/default/mobile/order/alipay.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/ewei_shopv2/default/mobile/order/comment.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/ewei_shopv2/default/mobile/order/create.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/ewei_shopv2/default/mobile/order/detail.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/ewei_shopv2/default/mobile/order/express.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/ewei_shopv2/default/mobile/order/pay.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/ewei_shopv2/default/mobile/order/pay/wechat_jie.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/ewei_shopv2/default/mobile/order/verify.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/ewei_shopv2/default/mobile/sale/coupon/util/couponpicker.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/ewei_shopv2/default/mobile/sale/coupon/util/picker.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/ewei_shopv2/default/mobile/shop/category.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/ewei_shopv2/default/mobile/shop/notice/detail.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/ewei_shopv2/default/mobile/shop/shopstrengthen.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/ewei_shopv2/default2/account/rf.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/ewei_shopv2/plugin/article/default/mobile/article/list.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/ewei_shopv2/plugin/diypage/default/mobile/diypage.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/ewei_shopv2/plugin/diypage/default/mobile/diypage/template/tpl_banner.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/ewei_shopv2/plugin/diypage/default/mobile/diypage/template/tpl_blank.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/ewei_shopv2/plugin/diypage/default/mobile/diypage/template/tpl_goods.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/ewei_shopv2/plugin/diypage/default/mobile/diypage/template/tpl_notice.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/ewei_shopv2/plugin/diypage/default/mobile/diypage/template/tpl_picturew.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/ewei_shopv2/plugin/diypage/default/mobile/diypage/template/tpl_search.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/ewei_shopv2/plugin/diypage/default/mobile/diypage/template/tpl_title.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/account/account-header.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/account/display.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/account/manage-base.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/account/manage-display.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/common/footer-base.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/common/footer.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/common/header-account.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/common/header-base.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/common/header-notice.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/common/header-system.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/common/header.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/common/message.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/home/welcome-system.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/home/welcome.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/mc/common.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/mc/member-information.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/mc/member.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/platform/qr-list.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/profile/common.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/profile/passport.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/profile/payment.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web/default/user/login.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/_message.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/admins.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/admins/job.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/hospital/job/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/admins/job/post.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/hospital/job/post.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/admins/post.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/diyform/goods.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/diyform/temp/tpl/data.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/diyform/temp/tpl/script.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/diypage.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/diypage/_common.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/diypage/_template.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/diypage/_template_edit.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/diypage/_template_followbar.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/diypage/_template_gotop.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/diypage/_template_layer.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/diypage/_template_menu.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/diypage/invoke/goods.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/diypage/menu.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/diypage/menu/post.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/diypage/page/create.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/diypage/page/list.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/diypage/page/mod/query.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/diypage/page/post.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/diypage/page/preview.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/diypage/shop/adv.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/diypage/shop/danmu.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/diypage/shop/followbar.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/diypage/shop/gotop.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/diypage/shop/layer.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/diypage/shop/menu.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/diypage/shop/page.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/diypage/temp.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/diypage/temp/category.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/finance/recharge.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/goods.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/goods/category.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/goods/category/post.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/goods/category/query.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/goods/group.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/goods/group/post.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/goods/group/query.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/goods/label.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/goods/label/query.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/goods/label/style.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/goods/post.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/goods/tab/buy.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/goods/tab/des.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/goods/tab/detaildiy.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/goods/tab/discount.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/goods/tab/notice.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/goods/tab/option.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/goods/tab/param.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/goods/tab/repeat.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/goods/tab/sale.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/goods/tab/share.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/goods/tab/verify.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/goods/tab/verifygoods.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/goods/tab/verifygoodscard.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/index.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/member/detail/basic.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/member/detail/sns.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/member/detail/trade.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/member/graph.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/member/group.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/member/level.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/member/level/post.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/member/list.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/member/list/detail.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/member/withdraw.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/merch/category/query.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/merch/group/query.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/merch/user/query.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/order.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/order/batchsend.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/order/detail.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/order/export.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/order/list.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/order/op/close.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/order/ops.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/shop/adv.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/shop/banner.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/shop/banner/post.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/shop/comment.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/shop/comment/post.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/shop/comment/virtual.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/shop/cube.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/shop/nav.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/shop/nav/post.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/shop/notice.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/shop/recommand.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/shop/refundaddress.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/shop/selectareas.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/shop/sort.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/sysset/cover.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/sysset/index.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/sysset/payment.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/sysset/payment/post.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/sysset/payset.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/sysset/trade.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/training.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/training/curriculum.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/training/index.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/training/post.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/util/goods_selector.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/util/goods_selector_js.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/util/selecticon.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/util/selecturl.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/util/selecturl_tpl.tpl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pcsite/static/js/jquery-1.11.1.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/pcsite/static/js/jquery-1.11.1.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/resource/components/tinymce/plugins/spellchecker/plugin.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/resource/components/tinymce/plugins/spellchecker/plugin.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/resource/components/ueditor/third-party/jquery-1.10.2.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/resource/components/ueditor/third-party/jquery-1.10.2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/resource/components/ueditor/third-party/jquery-1.10.2.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/resource/components/ueditor/third-party/jquery-1.10.2.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/resource/js/app/common.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/resource/js/app/common.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/resource/js/app/job.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/resource/js/app/job.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/resource/js/app/wapeditor.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/resource/js/app/wapeditor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/resource/js/common.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/resource/js/common.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/resource/js/lib/angular-bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/resource/js/lib/angular-bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/resource/js/lib/angular.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/resource/js/lib/angular.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/resource/js/lib/echarts.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/resource/js/lib/echarts.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/resource/js/lib/jquery-1.11.1.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/resource/js/lib/jquery-1.11.1.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/resource/js/wapeditor.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/resource/js/wapeditor.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,8 +244,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/core/mobile/order/op.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="444">
-              <caret line="119" column="13" lean-forward="true" selection-start-line="119" selection-start-column="13" selection-end-line="119" selection-end-column="13" />
+            <state relative-caret-position="1474">
+              <caret line="119" column="13" selection-start-line="119" selection-start-column="13" selection-end-line="119" selection-end-column="13" />
               <folding>
                 <element signature="n#cancel#0;n#Op_EweiShopV2Page#0;n#!!top" />
                 <element signature="n#delete#0;n#Op_EweiShopV2Page#0;n#!!top" />
@@ -52,51 +257,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/goods/post.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
+            <state relative-caret-position="4708">
               <caret line="214" column="161" selection-start-line="214" selection-start-column="150" selection-end-line="214" selection-end-column="161" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/goods/tab/basic.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="557">
-              <caret line="765" column="69" selection-start-line="765" selection-start-column="62" selection-end-line="765" selection-end-column="69" />
+            <state relative-caret-position="975">
+              <caret line="784" column="13" selection-start-line="784" selection-start-column="13" selection-end-line="784" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/core/web/goods/post.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="682">
-              <caret line="335" column="66" lean-forward="true" selection-start-line="335" selection-start-column="66" selection-end-line="335" selection-end-column="66" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="6842">
+              <caret line="311" column="21" selection-start-line="311" selection-start-column="21" selection-end-line="311" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -122,7 +302,6 @@
       <find>getSysset</find>
       <find>list</find>
       <find>detail</find>
-      <find>$data</find>
       <find>btn-group</find>
       <find>.video_list&gt;li</find>
       <find>fui-swipe-wrapper</find>
@@ -142,6 +321,7 @@
       <find>sendtype</find>
       <find>ewei_shop_goods</find>
       <find>是否支持退换货</find>
+      <find>$data</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -239,52 +419,7 @@
             <path>
               <item name="jjjk" type="b2602c69:ProjectViewProjectNode" />
               <item name="jjjk" type="462c0819:PsiDirectoryNode" />
-              <item name="addons" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jjjk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jjjk" type="462c0819:PsiDirectoryNode" />
-              <item name="addons" type="462c0819:PsiDirectoryNode" />
-              <item name="ewei_shopv2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jjjk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jjjk" type="462c0819:PsiDirectoryNode" />
-              <item name="addons" type="462c0819:PsiDirectoryNode" />
-              <item name="ewei_shopv2" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jjjk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jjjk" type="462c0819:PsiDirectoryNode" />
-              <item name="addons" type="462c0819:PsiDirectoryNode" />
-              <item name="ewei_shopv2" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jjjk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jjjk" type="462c0819:PsiDirectoryNode" />
-              <item name="addons" type="462c0819:PsiDirectoryNode" />
-              <item name="ewei_shopv2" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="goods" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jjjk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jjjk" type="462c0819:PsiDirectoryNode" />
-              <item name="addons" type="462c0819:PsiDirectoryNode" />
-              <item name="ewei_shopv2" type="462c0819:PsiDirectoryNode" />
-              <item name="template" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jjjk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jjjk" type="462c0819:PsiDirectoryNode" />
-              <item name="addons" type="462c0819:PsiDirectoryNode" />
-              <item name="ewei_shopv2" type="462c0819:PsiDirectoryNode" />
-              <item name="template" type="462c0819:PsiDirectoryNode" />
-              <item name="web_v3" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -350,12 +485,13 @@
       <workItem from="1554165951949" duration="63032000" />
       <workItem from="1556076434333" duration="17465000" />
       <workItem from="1556157204035" duration="235285000" />
-      <workItem from="1557017981738" duration="150333000" />
+      <workItem from="1557017981738" duration="150671000" />
+      <workItem from="1557366382459" duration="261000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="467076000" />
+    <option name="totallyTimeSpent" value="467675000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -368,15 +504,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14030206" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14149444" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3293011" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32969603" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49960256" visible="true" weight="0.28059235" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49960256" weight="0.28037384" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3293011" />
@@ -768,17 +903,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/core/mobile/order/op.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="119" column="13" lean-forward="true" selection-start-line="119" selection-start-column="13" selection-end-line="119" selection-end-column="13" />
-          <folding>
-            <element signature="n#cancel#0;n#Op_EweiShopV2Page#0;n#!!top" />
-            <element signature="n#delete#0;n#Op_EweiShopV2Page#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/goods/tab/verifygoodscard.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-27" />
@@ -868,49 +992,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/goods/post.html">
+    <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/core/mobile/order/op.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="214" column="161" selection-start-line="214" selection-start-column="150" selection-end-line="214" selection-end-column="161" />
+        <state relative-caret-position="1474">
+          <caret line="119" column="13" selection-start-line="119" selection-start-column="13" selection-end-line="119" selection-end-column="13" />
+          <folding>
+            <element signature="n#cancel#0;n#Op_EweiShopV2Page#0;n#!!top" />
+            <element signature="n#delete#0;n#Op_EweiShopV2Page#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/goods/tab/basic.html">
+    <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/goods/post.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="557">
-          <caret line="765" column="69" selection-start-line="765" selection-start-column="62" selection-end-line="765" selection-end-column="69" />
+        <state relative-caret-position="4708">
+          <caret line="214" column="161" selection-start-line="214" selection-start-column="150" selection-end-line="214" selection-end-column="161" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/core/web/goods/post.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="682">
-          <caret line="335" column="66" lean-forward="true" selection-start-line="335" selection-start-column="66" selection-end-line="335" selection-end-column="66" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="6842">
+          <caret line="311" column="21" selection-start-line="311" selection-start-column="21" selection-end-line="311" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/goods/tab/basic.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="975">
+          <caret line="784" column="13" selection-start-line="784" selection-start-column="13" selection-end-line="784" selection-end-column="13" />
         </state>
       </provider>
     </entry>
