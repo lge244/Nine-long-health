@@ -1,6 +1,6 @@
-<?php defined('IN_IA') or exit('Access Denied');?><?php  $no_left =true;?>
+{php $no_left =true;}
 
-<?php (!empty($this) && $this instanceof WeModuleSite || 1) ? (include $this->template('_header', TEMPLATE_INCLUDEPATH)) : (include template('_header', TEMPLATE_INCLUDEPATH));?>
+{template '_header'}
 
 
 <script type="text/javascript" src="../addons/ewei_shopv2/static/js/dist/area/cascade.js"></script>
@@ -105,9 +105,9 @@
 
     <span class="text-primary">
 
-    <?php  if(!empty($item['id'])) { ?>编辑<?php  } else { ?>添加<?php  } ?>权限 <small><?php  if(!empty($item['id'])) { ?>修改【<span
-            class="text-info"><?php  echo $item['title'];?></span>】<?php  } ?><?php  if(!empty($merch_user['merchname'])) { ?>商户名称:【<span
-            class="text-info"><?php  echo $merch_user['merchname'];?></span>】<?php  } ?></small>
+    {if !empty($item['id'])}编辑{else}添加{/if}权限 <small>{if !empty($item['id'])}修改【<span
+            class="text-info">{$item['title']}</span>】{/if}{if !empty($merch_user['merchname'])}商户名称:【<span
+            class="text-info">{$merch_user['merchname']}</span>】{/if}</small>
 
     </span>
 
@@ -154,7 +154,7 @@
         <div class="col-sm-9 subtitle">
             <input type="submit" value="保存信息" class="btn btn-primary"/>
             <a class="btn btn-default"
-               href="<?php  echo webUrl('admins/job')?>">返回列表</a>
+               href="{php echo webUrl('admins/job')}">返回列表</a>
         </div>
     </div>
     </form>
@@ -162,8 +162,8 @@
 
 
 <script type="text/javascript">
-    window.type = "<?php  echo $item['type'];?>";
-    window.virtual = "<?php  echo $item['virtual'];?>";
+    window.type = "{$item['type']}";
+    window.virtual = "{$item['virtual']}";
     require(['bootstrap'], function () {
         $('#myTab a').click(function (e) {
             $('#tab').val($(this).attr('href'));
@@ -183,7 +183,7 @@
             tip.msgbox.err('请填写权限名称!');
             return false;
         }
-        $.post("<?php  echo webUrl('admins/job/post')?>", {
+        $.post("{php echo webUrl('admins/job/post')}", {
             jobtitle: jobtitle,
             jobdesc: jobdesc
         }, function (res) {
@@ -197,5 +197,5 @@
 
 </script>
 
-<?php (!empty($this) && $this instanceof WeModuleSite || 1) ? (include $this->template('_footer', TEMPLATE_INCLUDEPATH)) : (include template('_footer', TEMPLATE_INCLUDEPATH));?>
+{template '_footer'}
 

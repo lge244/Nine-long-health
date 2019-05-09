@@ -1,4 +1,4 @@
-<?php defined('IN_IA') or exit('Access Denied');?><?php (!empty($this) && $this instanceof WeModuleSite || 1) ? (include $this->template('_header', TEMPLATE_INCLUDEPATH)) : (include template('_header', TEMPLATE_INCLUDEPATH));?>
+{template '_header'}
 <style>
     tbody tr td{
         position: relative;
@@ -78,9 +78,9 @@
         <div style="width: 100px;">价格</div>
         <div style="width: 80px;">库存</div>
         <div style="width: 80px;">销量</div>
-        <?php  if($goodsfrom!='cycle') { ?>
+        {if $goodsfrom!='cycle'}
         <div  style="width:80px;" >状态</div>
-        <?php  } ?>
+        {/if}
         <div class="flex1">属性</div>
         <div style="width: 120px;">操作</div>
     </div>
@@ -89,10 +89,10 @@
         <input type="hidden" name="a" value="entry" />
         <input type="hidden" name="m" value="ewei_shopv2" />
         <input type="hidden" name="do" value="web" />
-        <input type="hidden" name="r"  value="goods.<?php  echo $goodsfrom;?>" />
+        <input type="hidden" name="r"  value="goods.{$goodsfrom}" />
         <div class="page-toolbar">
             <span class="pull-left" style="margin-right:30px;">
-                <a class='btn btn-sm btn-primary' href="<?php  echo webUrl('admins/job/add')?>"><i class='fa fa-plus'></i> 添加权限</a>
+                <a class='btn btn-sm btn-primary' href="{php echo webUrl('admins/job/add')}"><i class='fa fa-plus'></i> 添加权限</a>
             </span>
         </div>
     </form>
@@ -108,13 +108,13 @@
                 </tr>
                 </thead>
                 <tbody>
-                <?php  if(is_array($category)) { foreach($category as $row) { ?>
+                {loop $category $row}
                 <tr>
-                    <td><?php  echo $row['id'];?></td>
-                    <td><?php  echo $row['jobtitle'];?></td>
-                    <td><?php  echo $row['jobdesc'];?></td>
+                    <td>{$row['id']}</td>
+                    <td>{$row[jobtitle]}</td>
+                    <td>{$row[jobdesc]}</td>
                 </tr>
-                <?php  } } ?>
+                {/loop}
                 </tbody>
             </table>
         </div>
@@ -125,8 +125,8 @@
     <!--</div>-->
 
 </div>
-<?php (!empty($this) && $this instanceof WeModuleSite || 1) ? (include $this->template('goods/batchcates', TEMPLATE_INCLUDEPATH)) : (include template('goods/batchcates', TEMPLATE_INCLUDEPATH));?>
-<?php (!empty($this) && $this instanceof WeModuleSite || 1) ? (include $this->template('_footer', TEMPLATE_INCLUDEPATH)) : (include template('_footer', TEMPLATE_INCLUDEPATH));?>
+{template 'goods/batchcates'}
+{template '_footer'}
 <script>
     //获得分类标签
     // var length = $('#catetag').children().length;
