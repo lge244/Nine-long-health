@@ -360,48 +360,29 @@
 		</div>
 	<div class="fui-cell-group fui-cell-click">
 		<a class="fui-cell" href="<?php  echo mobileUrl('member/insurance/add');?>">
-			<div class="fui-cell-icon"><i class="icon icon-like"></i></div>
+			<div class="fui-cell-icon"><i class="icon icon-daishouhuo1"></i></div>
 			<div class="fui-cell-text"><p>申请保险</p></div>
 			<div class="fui-cell-remark"></div>
 		</a>
 		<a class="fui-cell" href="<?php  echo mobileUrl('member/insurance/record');?>">
-			<div class="fui-cell-icon"><i class="icon icon-like"></i></div>
+			<div class="fui-cell-icon"><i class="icon icon-dingdan2"></i></div>
 			<div class="fui-cell-text"><p>投保记录</p></div>
 			<div class="fui-cell-remark"><?php  if($statics['favorite']>0) { ?><span class='badge'><?php  echo $statics['favorite'];?></span><?php  } ?></div>
 		</a>
-		<a class="fui-cell" href="<?php  echo mobileUrl('member/insurance');?>">
-			<div class="fui-cell-icon"><i class="icon icon-like"></i></div>
-			<div class="fui-cell-text"><p>我的保险</p></div>
-			<div class="fui-cell-remark"></div>
-		</a>
+	</div>
+		<div class="fui-cell-group fui-cell-click">
 		<a class="fui-cell" href="<?php  echo mobileUrl('member/reservation');?>">
-			<div class="fui-cell-icon"><i class="icon icon-like"></i></div>
-			<div class="fui-cell-text"><p>申请预约</p></div>
+			<div class="fui-cell-icon"><i class="icon icon-home1"></i></div>
+			<div class="fui-cell-text"><p>预约医院</p></div>
 			<div class="fui-cell-remark"></div>
 		</a>
 		<a class="fui-cell" href="<?php  echo mobileUrl('member/reservation/record');?>">
-			<div class="fui-cell-icon"><i class="icon icon-like"></i></div>
+			<div class="fui-cell-icon"><i class="icon icon-dingdan2"></i></div>
 			<div class="fui-cell-text"><p>预约记录</p></div>
 			<div class="fui-cell-remark"></div>
 		</a>
 	</div>
 
-		<div class="fui-cell-group fui-cell-click">
-		    <?php  if($_W['shopset']['trade']['withdraw']==1) { ?>
-			<a class="fui-cell" href="<?php  echo mobileUrl('member/withdraw')?>">
-				<div class="fui-cell-icon"><i class="icon icon-tixian"></i></div>
-				<div class="fui-cell-text"><p><?php  echo $_W['shopset']['trade']['moneytext'];?>提现</p></div>
-				<div class="fui-cell-remark"></div>
-			</a>
-		    <?php  } ?>
-			<a class="fui-cell" href="<?php  echo mobileUrl('member/log')?>">
-				<div class="fui-cell-icon"><i class="icon icon-xiaofei"></i></div>
-				<div class="fui-cell-text"><p>
-				    <?php  if($_W['shopset']['trade']['withdraw']==1) { ?><?php  echo $_W['shopset']['trade']['moneytext'];?>明细<?php  } else { ?>充值记录<?php  } ?>
-				    </p></div>
-				<div class="fui-cell-remark"></div>
-			</a>
-		</div>
 		<div class="fui-cell-group fui-cell-click">
 			<a class="fui-cell" href="<?php  echo mobileUrl('member/address')?>">
 				<div class="fui-cell-icon"><i class="icon icon-dingwei1"></i></div>

@@ -20,8 +20,11 @@ class Index_EweiShopV2Page extends WebPage
         global $_GPC;
 
         $insurance = pdo_get('ewei_shop_insurance', array('id' => $_GPC['id']));
-        if ($insurance['status'] == 2 || $insurance['status'] == 3) {
+        if ($insurance['status'] == 2 || $insurance['status'] == 4) {
             exit(json_encode(array('code' => 1, 'msg' => '保单已生效！')));
+        }
+        if ($insurance['status'] == 3 ){
+            exit(json_encode(array('code' => 1, 'msg' => '保单已关闭！无需再联系！')));
         }
         $a = pdo_update('ewei_shop_insurance', array('status' => 1), array('id' => $_GPC['id']));
 
@@ -36,8 +39,11 @@ class Index_EweiShopV2Page extends WebPage
         global $_W;
         global $_GPC;
         $insurance = pdo_get('ewei_shop_insurance', array('id' => $_GPC['id']));
-        if (!empty($insurance['price']) || $insurance['status'] == 2) {
+        if (!empty($insurance['price']) || $insurance['status'] == 2 || $insurance['status'] == 4) {
             exit(json_encode(array('code' => 1, 'msg' => '保单已生效！')));
+        }
+        if ($insurance['status'] == 3 ){
+            exit(json_encode(array('code' => 1, 'msg' => '保单已关闭！无需再联系！')));
         }
         $a = pdo_update('ewei_shop_insurance', array('status' => 2), array('id' => $_GPC['id']));
 
