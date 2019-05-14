@@ -81,6 +81,8 @@ class Reservation_EweiShopV2Page extends MobileLoginPage
 		if (is_post()) {
 			$id = $_GPC['id'];
 			$price = $_GPC['price'];
+			$price = pdo_getcolumn('ewei_reservation', ['id' => $id], 'price');
+			if ($price) exit(show_json(1, '已经反馈过，不可再次反馈'));
 			if (empty($id) || empty($price)) exit(show_json(0, '操作异常'));
 			$res = pdo_update('ewei_reservation', ['price' => $price], ['id' => $id]);
 			if (!$res) exit(show_json(0, '反馈失败'));

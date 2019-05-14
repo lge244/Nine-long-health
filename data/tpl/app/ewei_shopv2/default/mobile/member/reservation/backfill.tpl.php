@@ -63,7 +63,7 @@
 			success : function (data) {
 				if (data.status) {
 					alert(data.result.message);
-					window.location = "mobileUrl('member/reservation/record')";
+					window.location = "<?php  echo mobileUrl('member/reservation/record')?>";
 				} else {
 					alert(data.result.message);
 				}
