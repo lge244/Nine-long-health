@@ -37,6 +37,7 @@
 				<div class="fui-cell-label" style="width: 120px;">医疗总金额</div>
 				<div class="fui-cell-info">
 					<input type="text" id="price" placeholder="请填写医疗总金额" name="price" class="fui-input" value="" max="25">
+					<input type="hidden" id="reservation_id" name="reservation_id" class="fui-input" value="<?php  echo $id;?>">
 				</div>
 			</div>
 		</div>
@@ -44,22 +45,9 @@
 	</div>
 </div>
 <script>
-	function getQueryString(name) {
-		var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i');
-		var r = window.location.search.substr(1).match(reg);
-		if (r != null) {
-			return unescape(r[2]);
-		}
-		return null;
-	}
-	var id = getQueryString('id');
-	if (id == '') {
-	} else {
-		$('#id').val(id);
-	}
 	$('#withdraw').click(function () {
 		var price = $('#price').val();
-		var id = $('#id').val();
+		var reservation_id = $('#reservation_id').val();
 		if (price == '') {
 			alert('保单价格不能为空');
 			return false;
@@ -68,7 +56,7 @@
 			type : 'post',
 			url : '<?php  echo mobileUrl("member/reservation/backFill")?>',
 			data : {
-				id : id,
+				id : reservation_id,
 				price : price,
 			},
 			dataType : 'json',

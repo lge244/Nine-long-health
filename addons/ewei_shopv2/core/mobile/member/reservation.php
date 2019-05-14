@@ -77,6 +77,7 @@ class Reservation_EweiShopV2Page extends MobileLoginPage
 	{
 		global $_GPC;
 		global $_W;
+		$id = $_GPC['id'];
 		if (is_post()) {
 			$id = $_GPC['id'];
 			$price = $_GPC['price'];
