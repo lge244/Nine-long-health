@@ -654,6 +654,11 @@ class System_EweiShopV2Model
 						"title" => "预约列表",
 						"route" => "reservation",
 						"desc"  => "预约管理"
+					),
+					array(
+						"title" => "分润设置",
+						"route" => "divided",
+						"desc"  => "分润管理"
 					)
 				)
 			),
