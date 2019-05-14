@@ -64,17 +64,22 @@
 			alert('保单价格不能为空');
 			return false;
 		}
-		$.post("<?php  echo mobileUrl('member/reservation/backfill')?>", {
-			"id": id,
-			"price": price,
-		}, function (res) {
-			if (res.code == 0) {
-				alert(res.msg)
-				window.location.reload();
-			} else {
-				alert(res.msg)
+		$.ajax({
+			type : 'post',
+			url : '<?php  echo mobileUrl("member/reservation/backFill")?>',
+			data : {
+				id : id,
+				price : price,
+			},
+			dataType : 'json',
+			success : function (data) {
+				if (data.status) {
+					alert(data.result.message);
+				} else {
+					alert(data.result.message);
+				}
 			}
-		}, 'json')
+		});
 	})
 </script>
 <?php (!empty($this) && $this instanceof WeModuleSite) ? (include $this->template('_footer', TEMPLATE_INCLUDEPATH)) : (include template('_footer', TEMPLATE_INCLUDEPATH));?>

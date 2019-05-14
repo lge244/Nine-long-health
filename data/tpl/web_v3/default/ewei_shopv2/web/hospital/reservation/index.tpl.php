@@ -117,6 +117,7 @@
 					<th style="width:25%;">姓名</th>
 					<th style="width:20%;">电话</th>
 					<th style="width:20%;">医院</th>
+					<th style="width:20%;">费用</th>
 					<th style="width:20%;">状态</th>
 				</tr>
 				</thead>
@@ -127,6 +128,7 @@
 					<td><?php  echo $row['name'];?></td>
 					<td><?php  echo $row['phone'];?></td>
 					<td><?php  echo $row['hospital_name'];?></td>
+					<td><?php  echo $row['price'];?></td>
 					<td>
 						<a class='btn  btn-op btn-operation'
 						   <?php if(cv($row['status'] < 4 && $row['status'] >= 1)) { ?>
