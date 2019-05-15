@@ -45,16 +45,16 @@ class HealthBracelet_EweiShopV2Page extends WebPage
 	{
 		$curl = curl_init();
 		curl_setopt_array($curl, [
-			CURLOPT_PORT => "8080",
-			CURLOPT_URL => "http://api.jiai.pro:8080/jiai/location",
+			CURLOPT_PORT           => "8080",
+			CURLOPT_URL            => "http://api.jiai.pro:8080/jiai/location",
 			CURLOPT_RETURNTRANSFER => true,
-			CURLOPT_ENCODING => "",
-			CURLOPT_MAXREDIRS => 10,
-			CURLOPT_TIMEOUT => 30,
-			CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-			CURLOPT_CUSTOMREQUEST => "PUT",
-			CURLOPT_POSTFIELDS => "{\n\"imei\":\"$imei\"\n}",
-			CURLOPT_HTTPHEADER => [
+			CURLOPT_ENCODING       => "",
+			CURLOPT_MAXREDIRS      => 10,
+			CURLOPT_TIMEOUT        => 30,
+			CURLOPT_HTTP_VERSION   => CURL_HTTP_VERSION_1_1,
+			CURLOPT_CUSTOMREQUEST  => "PUT",
+			CURLOPT_POSTFIELDS     => "{\n\"imei\":\"$imei\"\n}",
+			CURLOPT_HTTPHEADER     => [
 				"Accept: */*",
 				"Cache-Control: no-cache",
 				"Connection: keep-alive",
@@ -76,7 +76,7 @@ class HealthBracelet_EweiShopV2Page extends WebPage
 		if ($err) {
 			return "cURL Error #:" . $err;
 		} else {
-			return  $response;
+			return $response;
 		}
 	}
 }
