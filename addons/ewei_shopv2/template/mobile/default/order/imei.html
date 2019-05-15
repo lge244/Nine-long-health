@@ -85,10 +85,17 @@
             }
             $('#withdraw').click(function () {
                 console.log(num);
-                for (var i = 1; i <= num; i++) {
-                    var arr = [{i:$("input[name=username]").val()}]
-                }
-                console.log(arr);
+                var arr = new Array();
+                $("input[name=username]").each(function(j,item){
+                    arr[j] = item.value;
+                });
+                var id = getQueryString('id');
+                $.post("{php echo mobileUrl('order/op/finish')}",{imei:arr,id:id},function (res) {
+                    if (res.status == 1){
+                        location.href = res.result.url
+                    }
+                },'json');
+                console.log(JSON.stringify(arr));
             })
         })
 
