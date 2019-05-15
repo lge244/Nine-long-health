@@ -18,7 +18,9 @@ class Index_EweiShopV2Page extends WebPage
     {
         global $_W;
         global $_GPC;
-
+        $member = pdo_get('member_wristband', array('mobile' => $_GPC['mobile']));
+        $user1 = pdo_getall('wristband_location', array('imei'=>$member['imei']), array() , '' , 'id desc' , array(1));
+        $location = $user1[0];
         include $this->template();
     }
 
@@ -27,6 +29,10 @@ class Index_EweiShopV2Page extends WebPage
         global $_GPC;
         $member = pdo_get('member_wristband', array('mobile' => $_GPC['mobile']));
         $data = $this->requestlocation($member['imei']);
+        if (!empty($data)){
+            exit(json_encode(array('code'=>0,'msg'=>'获取成功！')));
+        }
+        exit(json_encode(array('code'=>1,'msg'=>'网络错误！请稍后重试！')));
     }
 
     public function requestlocation($imei)
