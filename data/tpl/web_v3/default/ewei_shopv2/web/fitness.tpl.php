@@ -83,18 +83,14 @@
 <div class="page-content">
 
 
-    <form action="./index.php" method="get" class="form-horizontal form-search" role="form">
-        <input type="hidden" name="c" value="site"/>
-        <input type="hidden" name="a" value="entry"/>
-        <input type="hidden" name="m" value="ewei_shopv2"/>
-        <input type="hidden" name="do" value="web"/>
-        <input type="hidden" name="r" value="goods.<?php  echo $goodsfrom;?>"/>
-        <div class="page-toolbar">
-            <span class="pull-left" style="margin-right:30px;">
-                <a class='btn btn-sm btn-primary' href="<?php  echo webUrl('training/add')?>"><i class='fa fa-plus'></i> 添加课程</a>
-            </span>
-        </div>
-    </form>
+    <!--<form action="./index.php" method="get" class="form-horizontal form-search" role="form">-->
+        <!--<input type="hidden" name="c" value="site"/>-->
+        <!--<input type="hidden" name="a" value="entry"/>-->
+        <!--<input type="hidden" name="m" value="ewei_shopv2"/>-->
+        <!--<input type="hidden" name="do" value="web"/>-->
+        <!--<input type="hidden" name="r" value="goods.<?php  echo $goodsfrom;?>"/>-->
+      <!---->
+    <!--</form>-->
     <div class="row">
         <div class="col-md-12">
             <table class="table table-responsive">
@@ -117,9 +113,9 @@
                     <td><?php  if($row['status'] == 0 ) { ?><span style="color: red">否</span><?php  } else { ?><span style="color: #0baefd">是</span><?php  } ?></td>
                     <td><?php  echo date('Y-m-d',$row['schooltime'])?></td>
                     <td>
-                        <a  class='btn  btn-op btn-operation' onclick="pass(<?php  echo $row['id'];?>)" href="#">
-                                   <span data-toggle="tooltip" data-placement="top" title="" data-original-title="通过">
-                                        <i class='icow icow-bianji2'></i>
+                        <a  class='btn  btn-op btn-operation' href="<?php  echo webUrl('fitness/health', array('mobile' => $row['member']['mobile']))?>">
+                                   <span data-toggle="tooltip" data-placement="top" title="" data-original-title="查看健康">
+                                        <i class='icow icow-chakan2'></i>
                                    </span>
                         </a>
                     </td>
@@ -134,14 +130,5 @@
 <?php (!empty($this) && $this instanceof WeModuleSite || 1) ? (include $this->template('goods/batchcates', TEMPLATE_INCLUDEPATH)) : (include template('goods/batchcates', TEMPLATE_INCLUDEPATH));?>
 <?php (!empty($this) && $this instanceof WeModuleSite || 1) ? (include $this->template('_footer', TEMPLATE_INCLUDEPATH)) : (include template('_footer', TEMPLATE_INCLUDEPATH));?>
 <script>
-    function pass(id) {
-        $.post("<?php  echo webUrl('training/pass')?>",{id:id},function (res) {
-            if (res.code == 0){
-                tip.msgbox.suc(res.msg);
-                window.location.reload();
-            }else{
-                tip.msgbox.err(res.msg);
-            }
-        },'json')
-    }
+
 </script>

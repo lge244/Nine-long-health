@@ -79,6 +79,17 @@ class Op_EweiShopV2Page extends MobileLoginPage
         $orderid = intval($_GPC["id"]);
 
         $order = pdo_fetch("select id,status,openid,couponid,price,refundstate,refundid,ordersn,price from " . tablename("ewei_shop_order") . " where id=:id and uniacid=:uniacid and openid=:openid limit 1", array(":id" => $orderid, ":uniacid" => $_W["uniacid"], ":openid" => $_W["openid"]));
+        $goods = pdo_getall('ewei_shop_order_goods',array('orderid'=>$order['id']),array('goodsid','total'));
+        $imei =0;
+        foreach ($goods as $k=>$v){
+            $goods_list = pdo_get('ewei_shop_goods',array('id'=>$v['goodsid']));
+            if ($goods_list['pcate'] == 1181){
+               $imei = $v['total'];
+            }
+        }
+        if ($imei > 0){
+            exit(json_encode(array('status'=>2,'msg'=>'手环必须要填写串号才能确定收货','num'=>$imei)));
+        }
         if (empty($order)) {
             show_json(0, "订单未找到");
         }
@@ -93,7 +104,7 @@ class Op_EweiShopV2Page extends MobileLoginPage
             $change_refund["refundtime"] = time();
             pdo_update("ewei_shop_order_refund", $change_refund, array("id" => $order["refundid"], "uniacid" => $_W["uniacid"]));
         }
-        pdo_update("ewei_shop_order", array("status" => 3, "finishtime" => time(), "refundstate" => 0), array("id" => $order["id"], "uniacid" => $_W["uniacid"]));
+//        pdo_update("ewei_shop_order", array("status" => 3, "finishtime" => time(), "refundstate" => 0), array("id" => $order["id"], "uniacid" => $_W["uniacid"]));
 
         $goods = pdo_getall('ewei_shop_order_goods',array('orderid'=>$order['id']),array('goodsid','total'));
         foreach ($goods as $k=>$v){
@@ -117,6 +128,9 @@ class Op_EweiShopV2Page extends MobileLoginPage
                 for ($i = 1;$i<=$v['total'];$i++){
                     pdo_insert('ewei_shop_fitness',$data);
                 }
+            }
+            if ($goods_list['pcate'] == 1181){
+                pdo_update('ewei_shop_fitness',array('status'=>1),array('openid'=>$order['openid']));
             }
             if ($goods_list['upgrade'] == 0){
                 $upgrade = 1;
