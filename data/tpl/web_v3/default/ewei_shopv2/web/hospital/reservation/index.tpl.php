@@ -118,7 +118,7 @@
                     <th style="width:20%;">电话</th>
                     <th style="width:20%;">医院</th>
                     <th style="width:20%;">费用</th>
-                    <th style="width:20%;">状态</th>
+                    <th style="width:20%;" colspan="2">操作</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -147,6 +147,13 @@
 								<?php if(cv($row['status'] == 3)) { ?>已付款<?php  } ?>
 								<?php if(cv($row['status'] == 4)) { ?>已分润<?php  } ?>
 							</span>
+                        </a>
+                    </td>
+                    <td>
+                        <a class="btn  btn-op btn-operation" href="<?php  echo webUrl('hospital/healthBracelet/main', ['mobile' => $row['phone']])?>">
+                            <span data-toggle="tooltip" data-placement="top" title="" data-original-title="查看健康">
+                                <i class="icow icow-chakan2"></i>
+                            </span>
                         </a>
                     </td>
                 </tr>

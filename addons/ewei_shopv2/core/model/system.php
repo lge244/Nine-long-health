@@ -656,11 +656,6 @@ class System_EweiShopV2Model
                         "desc"  => "预约管理"
                     ),
                     array(
-                        "title" => "健康手环",
-                        "route" => "healthBracelet",
-                        "desc"  => "分润管理"
-                    ),
-                    array(
                         "title" => "分润设置",
                         "route" => "divided",
                         "desc"  => "分润管理"
