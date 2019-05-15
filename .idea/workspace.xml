@@ -5,13 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a701d574-fe47-4661-abe0-57512a43e714" name="Default Changelist" comment="Merge branch 'master' of https://github.com/lge244/Nine-long-health&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;addons/ewei_shopv2/core/model/system.php&#10;#&#9;data/tpl/app/ewei_shopv2/default/mobile/member/insurance/backfill.tpl.php&#10;#&#9;data/tpl/web_v3/default/ewei_shopv2/web/goods/tab/basic.tpl.php&#10;#&#9;data/tpl/web_v3/default/ewei_shopv2/web/insurance.tpl.php&#10;#&#9;data/tpl/web_v3/default/ewei_shopv2/web/insurance/share.tpl.php&#10;#&#9;data/tpl/web_v3/default/ewei_shopv2/web/order/op/send.tpl.php">
-      <change afterPath="$PROJECT_DIR$/addons/ewei_shopv2/core/model/system.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/hospital/divided/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/hospital/index/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/hospital/index/post.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/hospital/reservation/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/config.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addons/ewei_shopv2/static/css/swiper-3.2.7.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addons/ewei_shopv2/static/js/dist/swiper/swiper-3.4.0.jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/fitness/health.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/core/mobile/order/op.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/core/mobile/order/op.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/core/web/fitness/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/core/web/fitness/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/template/mobile/default/order/imei.html" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/template/mobile/default/order/imei.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/ewei_shopv2/default/mobile/order/imei.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/data/tpl/app/ewei_shopv2/default/mobile/order/imei.tpl.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,8 +28,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/core/mobile/order/op.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="89" column="23" selection-start-line="89" selection-start-column="23" selection-end-line="89" selection-end-column="23" />
+            <state relative-caret-position="1408">
+              <caret line="140" column="36" selection-start-line="140" selection-start-column="36" selection-end-line="140" selection-end-column="36" />
               <folding>
                 <element signature="n#cancel#0;n#Op_EweiShopV2Page#0;n#!!top" />
                 <element signature="n#delete#0;n#Op_EweiShopV2Page#0;n#!!top" />
@@ -38,10 +39,42 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/template/mobile/default/order/index.html">
+        <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/fitness/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="321" selection-start-line="321" selection-end-line="321" />
+            <state relative-caret-position="242">
+              <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+              <folding>
+                <element signature="n#style#0;n#th#4;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#td#3;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#1;n#td#3;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/fitness/health.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="646">
+              <caret line="132" column="51" lean-forward="true" selection-start-line="132" selection-start-column="51" selection-end-line="132" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/_header_base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="12" selection-start-line="12" selection-end-line="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/core/web/fitness/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -49,8 +82,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/static/js/app/biz/order/op.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1078">
-              <caret line="100" column="36" selection-start-line="100" selection-start-column="36" selection-end-line="100" selection-end-column="36" />
+            <state relative-caret-position="418">
+              <caret line="70" column="33" selection-start-line="70" selection-start-column="19" selection-end-line="70" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -58,51 +91,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/template/mobile/default/order/imei.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="70" column="28" selection-start-line="70" selection-start-column="28" selection-end-line="70" selection-end-column="28" />
+            <state relative-caret-position="695">
+              <caret line="98" column="14" selection-start-line="98" selection-start-column="14" selection-end-line="98" selection-end-column="14" />
               <folding>
                 <element signature="e#759#765#1" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/hospital/index/post.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2609">
-              <caret line="139" lean-forward="true" selection-start-line="139" selection-end-line="139" />
-              <folding>
-                <element signature="e#2811#2835#0" expanded="true" />
-                <element signature="e#3289#3313#0" expanded="true" />
-                <element signature="e#3767#3791#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/hospital/reservation/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="827">
-              <caret line="162" column="9" selection-start-line="162" selection-start-column="9" selection-end-line="162" selection-end-column="9" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#div#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="e#1790#1796#1" expanded="true" />
-                <element signature="n#style#0;n#div#4;n#div#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#5;n#div#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#6;n#div#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#7;n#div#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#9;n#div#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#th#0;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#th#1;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#th#2;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#th#3;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#th#4;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#th#5;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -119,8 +112,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>fui-swipe-wrapper</find>
-      <find>$thumbs</find>
       <find>fui-swipe-item</find>
       <find>$_W</find>
       <find>我的关注</find>
@@ -149,6 +140,8 @@
       <find>确认收货</find>
       <find>order-finish</find>
       <find>finish</find>
+      <find>ewei_shop_fitness</find>
+      <find>swiper-slide</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -157,8 +150,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/addons/ewei_shopv2/template/mobile/default/goods/detail.html" />
-        <option value="$PROJECT_DIR$/addons/ewei_shopv2/core/web/training/curriculum.php" />
         <option value="$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/training/curriculum.html" />
         <option value="$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/member/detail/basic.html" />
         <option value="$PROJECT_DIR$/addons/ewei_shopv2/core/web/member/level.php" />
@@ -196,18 +187,20 @@
         <option value="$PROJECT_DIR$/api/health.php" />
         <option value="$PROJECT_DIR$/api/beatHeart.php" />
         <option value="$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/fitness/index.html" />
-        <option value="$PROJECT_DIR$/addons/ewei_shopv2/core/web/fitness/index.php" />
         <option value="$PROJECT_DIR$/addons/ewei_shopv2/core/mobile/order/imei.php" />
         <option value="$PROJECT_DIR$/addons/ewei_shopv2/static/js/app/biz/order/list.js" />
         <option value="$PROJECT_DIR$/addons/ewei_shopv2/static/js/app/biz/order/op.js" />
-        <option value="$PROJECT_DIR$/addons/ewei_shopv2/core/mobile/order/op.php" />
-        <option value="$PROJECT_DIR$/addons/ewei_shopv2/template/mobile/default/order/imei.html" />
         <option value="$PROJECT_DIR$/data/config.php" />
         <option value="$PROJECT_DIR$/addons/ewei_shopv2/core/model/system.php" />
         <option value="$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/hospital/divided/index.html" />
         <option value="$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/hospital/index/index.html" />
         <option value="$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/hospital/index/post.html" />
         <option value="$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/hospital/reservation/index.html" />
+        <option value="$PROJECT_DIR$/addons/ewei_shopv2/template/mobile/default/order/imei.html" />
+        <option value="$PROJECT_DIR$/addons/ewei_shopv2/core/mobile/order/op.php" />
+        <option value="$PROJECT_DIR$/addons/ewei_shopv2/core/web/fitness/index.php" />
+        <option value="$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/_header_base.html" />
+        <option value="$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/fitness/health.html" />
       </list>
     </option>
   </component>
@@ -261,6 +254,20 @@
               <item name="jjjk" type="462c0819:PsiDirectoryNode" />
               <item name="addons" type="462c0819:PsiDirectoryNode" />
               <item name="ewei_shopv2" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jjjk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jjjk" type="462c0819:PsiDirectoryNode" />
+              <item name="addons" type="462c0819:PsiDirectoryNode" />
+              <item name="ewei_shopv2" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jjjk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jjjk" type="462c0819:PsiDirectoryNode" />
+              <item name="addons" type="462c0819:PsiDirectoryNode" />
+              <item name="ewei_shopv2" type="462c0819:PsiDirectoryNode" />
               <item name="template" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -270,25 +277,6 @@
               <item name="ewei_shopv2" type="462c0819:PsiDirectoryNode" />
               <item name="template" type="462c0819:PsiDirectoryNode" />
               <item name="web_v3" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jjjk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jjjk" type="462c0819:PsiDirectoryNode" />
-              <item name="addons" type="462c0819:PsiDirectoryNode" />
-              <item name="ewei_shopv2" type="462c0819:PsiDirectoryNode" />
-              <item name="template" type="462c0819:PsiDirectoryNode" />
-              <item name="web_v3" type="462c0819:PsiDirectoryNode" />
-              <item name="hospital" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jjjk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jjjk" type="462c0819:PsiDirectoryNode" />
-              <item name="addons" type="462c0819:PsiDirectoryNode" />
-              <item name="ewei_shopv2" type="462c0819:PsiDirectoryNode" />
-              <item name="template" type="462c0819:PsiDirectoryNode" />
-              <item name="web_v3" type="462c0819:PsiDirectoryNode" />
-              <item name="hospital" type="462c0819:PsiDirectoryNode" />
-              <item name="reservation" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -311,11 +299,11 @@
       <recent name="D:\phpStudy\WWW\jjjk" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\phpStudy\WWW\jjjk\addons\ewei_shopv2\static\js\dist\swiper" />
+      <recent name="D:\phpStudy\WWW\jjjk\addons\ewei_shopv2\static\css" />
+      <recent name="D:\phpStudy\WWW\jjjk\addons\ewei_shopv2\static\css\card" />
       <recent name="D:\phpStudy\WWW\jjjk\addons\ewei_shopv2\core\mobile" />
       <recent name="D:\phpStudy\WWW\jjjk\addons\ewei_shopv2\core\mobile\member\insurance" />
-      <recent name="D:\phpStudy\WWW\jjjk\addons\ewei_shopv2\template\mobile\default\member\insurance" />
-      <recent name="D:\phpStudy\WWW\hmj\addons\ewei_shopv2\core\mobile\member" />
-      <recent name="D:\phpStudy\WWW\hmj\addons\ewei_shopv2\core\mobile\share" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -364,12 +352,12 @@
       <workItem from="1556157204035" duration="235285000" />
       <workItem from="1557017981738" duration="150671000" />
       <workItem from="1557366382459" duration="28990000" />
-      <workItem from="1557794828296" duration="74506000" />
+      <workItem from="1557794828296" duration="81297000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="570910000" />
+    <option name="totallyTimeSpent" value="577701000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -460,21 +448,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/goods/tab/discount.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-27" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/goods/tab/detaildiy.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-27" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/goods/tab/des.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-27" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/goods/tab/buy.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-27" />
@@ -500,45 +473,6 @@
             <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/core/web/goods/post.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1034">
-          <caret line="324" column="63" selection-start-line="324" selection-start-column="63" selection-end-line="324" selection-end-column="63" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/goods/post.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="201" selection-start-line="201" selection-end-line="201" />
         </state>
       </provider>
     </entry>
@@ -707,18 +641,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/fitness/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="834">
-          <caret line="122" column="23" lean-forward="true" selection-start-line="122" selection-start-column="23" selection-end-line="122" selection-end-column="23" />
-          <folding>
-            <element signature="n#style#0;n#th#4;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#td#3;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#1;n#td#3;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/11.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="572">
@@ -768,35 +690,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/static/js/app/biz/order/op.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1078">
-          <caret line="100" column="36" selection-start-line="100" selection-start-column="36" selection-end-line="100" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/template/mobile/default/order/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="321" selection-start-line="321" selection-end-line="321" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/template/mobile/default/member/insurance/add.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1005">
           <caret line="127" column="22" lean-forward="true" selection-start-line="127" selection-start-column="22" selection-end-line="127" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/core/mobile/order/op.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="89" column="23" selection-start-line="89" selection-start-column="23" selection-end-line="89" selection-end-column="23" />
-          <folding>
-            <element signature="n#cancel#0;n#Op_EweiShopV2Page#0;n#!!top" />
-            <element signature="n#delete#0;n#Op_EweiShopV2Page#0;n#!!top" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -811,13 +708,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
           <caret line="21" column="11" lean-forward="true" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/core/web/fitness/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -869,33 +759,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/template/mobile/default/order/imei.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="70" column="28" selection-start-line="70" selection-start-column="28" selection-end-line="70" selection-end-column="28" />
-          <folding>
-            <element signature="e#759#765#1" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/hospital/index/post.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2609">
-          <caret line="139" lean-forward="true" selection-start-line="139" selection-end-line="139" />
-          <folding>
-            <element signature="e#2811#2835#0" expanded="true" />
-            <element signature="e#3289#3313#0" expanded="true" />
-            <element signature="e#3767#3791#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/hospital/reservation/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="827">
-          <caret line="162" column="9" selection-start-line="162" selection-start-column="9" selection-end-line="162" selection-end-column="9" />
+        <state relative-caret-position="1025">
+          <caret line="150" column="25" lean-forward="true" selection-start-line="150" selection-start-column="25" selection-end-line="150" selection-end-column="25" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
@@ -913,6 +780,131 @@
             <element signature="n#style#0;n#th#4;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#th#5;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/hospital/index/post.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2609">
+          <caret line="139" lean-forward="true" selection-start-line="139" selection-end-line="139" />
+          <folding>
+            <element signature="e#2811#2835#0" expanded="true" />
+            <element signature="e#3289#3313#0" expanded="true" />
+            <element signature="e#3767#3791#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/static/js/app/biz/order/op.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="70" column="33" selection-start-line="70" selection-start-column="19" selection-end-line="70" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/template/mobile/default/order/imei.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="695">
+          <caret line="98" column="14" selection-start-line="98" selection-start-column="14" selection-end-line="98" selection-end-column="14" />
+          <folding>
+            <element signature="e#759#765#1" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/template/mobile/default/order/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="351" lean-forward="true" selection-start-line="351" selection-end-line="351" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/core/mobile/order/op.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1408">
+          <caret line="140" column="36" selection-start-line="140" selection-start-column="36" selection-end-line="140" selection-end-column="36" />
+          <folding>
+            <element signature="n#cancel#0;n#Op_EweiShopV2Page#0;n#!!top" />
+            <element signature="n#delete#0;n#Op_EweiShopV2Page#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/core/web/fitness/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/core/web/goods/post.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-183">
+          <caret line="316" column="30" lean-forward="true" selection-start-line="316" selection-start-column="30" selection-end-line="316" selection-end-column="30" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#th#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/goods/post.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2816">
+          <caret line="304" column="10" lean-forward="true" selection-start-line="304" selection-start-column="10" selection-end-line="304" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/_header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4818" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/fitness/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+          <folding>
+            <element signature="n#style#0;n#th#4;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#td#3;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#td#3;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/_header_base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" selection-start-line="12" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/fitness/health.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="132" column="51" lean-forward="true" selection-start-line="132" selection-start-column="51" selection-end-line="132" selection-end-column="51" />
         </state>
       </provider>
     </entry>

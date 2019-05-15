@@ -19,5 +19,6 @@ class Index_EweiShopV2Page extends WebPage
         global $_W;
         global $_GPC;
 
+        include $this->template();
     }
 }

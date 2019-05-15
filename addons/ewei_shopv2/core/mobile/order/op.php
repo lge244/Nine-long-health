@@ -79,16 +79,30 @@ class Op_EweiShopV2Page extends MobileLoginPage
         $orderid = intval($_GPC["id"]);
 
         $order = pdo_fetch("select id,status,openid,couponid,price,refundstate,refundid,ordersn,price from " . tablename("ewei_shop_order") . " where id=:id and uniacid=:uniacid and openid=:openid limit 1", array(":id" => $orderid, ":uniacid" => $_W["uniacid"], ":openid" => $_W["openid"]));
-        $goods = pdo_getall('ewei_shop_order_goods',array('orderid'=>$order['id']),array('goodsid','total'));
-        $imei =0;
-        foreach ($goods as $k=>$v){
-            $goods_list = pdo_get('ewei_shop_goods',array('id'=>$v['goodsid']));
-            if ($goods_list['pcate'] == 1181){
-               $imei = $v['total'];
+        $goods = pdo_getall('ewei_shop_order_goods', array('orderid' => $order['id']), array('goodsid', 'total'));
+        $imei = 0;
+        if (!isset($_GPC['imei'])) {
+
+            foreach ($goods as $k => $v) {
+                $goods_list = pdo_get('ewei_shop_goods', array('id' => $v['goodsid']));
+                if ($goods_list['pcate'] == 1181) {
+                    $imei = $v['total'];
+                }
             }
+        } else {
+            $imei2 = $_GPC['imei'];
+            for ($i = 0; $i <= count($imei2) - 1; $i++) {
+                $data['openid'] = $_W['ewei_shopv2_member']['openid'];
+                $data['mobile'] = $_W['ewei_shopv2_member']['mobile'];
+                $data['imei'] = $imei2[$i];
+                $data['orderid'] = $orderid;
+                pdo_insert('member_wristband', $data);
+                unset($data);
+            }
+
         }
-        if ($imei > 0){
-            exit(json_encode(array('status'=>2,'msg'=>'手环必须要填写串号才能确定收货','num'=>$imei)));
+        if ($imei > 0) {
+            exit(json_encode(array('status' => 2, 'msg' => '手环必须要填写串号才能确定收货', 'num' => $imei)));
         }
         if (empty($order)) {
             show_json(0, "订单未找到");
@@ -104,70 +118,70 @@ class Op_EweiShopV2Page extends MobileLoginPage
             $change_refund["refundtime"] = time();
             pdo_update("ewei_shop_order_refund", $change_refund, array("id" => $order["refundid"], "uniacid" => $_W["uniacid"]));
         }
-//        pdo_update("ewei_shop_order", array("status" => 3, "finishtime" => time(), "refundstate" => 0), array("id" => $order["id"], "uniacid" => $_W["uniacid"]));
+        pdo_update("ewei_shop_order", array("status" => 3, "finishtime" => time(), "refundstate" => 0), array("id" => $order["id"], "uniacid" => $_W["uniacid"]));
 
-        $goods = pdo_getall('ewei_shop_order_goods',array('orderid'=>$order['id']),array('goodsid','total'));
-        foreach ($goods as $k=>$v){
-            $goods_list = pdo_get('ewei_shop_goods',array('id'=>$v['goodsid']));
-            if ($goods_list['pcate'] == 1182){
+        $goods = pdo_getall('ewei_shop_order_goods', array('orderid' => $order['id']), array('goodsid', 'total'));
+        foreach ($goods as $k => $v) {
+            $goods_list = pdo_get('ewei_shop_goods', array('id' => $v['goodsid']));
+            if ($goods_list['pcate'] == 1182) {
                 $data['openid'] = $order['openid'];
                 $data['schooltime'] = time();
                 $data['goodsid'] = $goods_list['id'];
                 $data['title'] = $goods_list['title'];
                 $data['status'] = 0;
-                for ($i = 1;$i<=$v['total'];$i++){
-                    pdo_insert('ewei_shop_curriculum',$data);
+                for ($i = 1; $i <= $v['total']; $i++) {
+                    pdo_insert('ewei_shop_curriculum', $data);
                 }
             }
-            if ($goods_list['pcate'] == 1176){
+            if ($goods_list['pcate'] == 1176) {
                 $data['openid'] = $order['openid'];
                 $data['schooltime'] = time();
                 $data['goodsid'] = $goods_list['id'];
                 $data['title'] = $goods_list['title'];
                 $data['status'] = 0;
-                for ($i = 1;$i<=$v['total'];$i++){
-                    pdo_insert('ewei_shop_fitness',$data);
+                for ($i = 1; $i <= $v['total']; $i++) {
+                    pdo_insert('ewei_shop_fitness', $data);
                 }
             }
-            if ($goods_list['pcate'] == 1181){
-                pdo_update('ewei_shop_fitness',array('status'=>1),array('openid'=>$order['openid']));
+            if ($goods_list['pcate'] == 1181) {
+                pdo_update('ewei_shop_fitness', array('status' => 1), array('openid' => $order['openid']));
             }
-            if ($goods_list['upgrade'] == 0){
+            if ($goods_list['upgrade'] == 0) {
                 $upgrade = 1;
             }
 
         }
 
-        $order= pdo_getall('ewei_shop_order', array( "openid" => $_W['openid'],"status"=>3), array('id'));
+        $order = pdo_getall('ewei_shop_order', array("openid" => $_W['openid'], "status" => 3), array('id'));
         $order_Num = 0;
-        foreach ($order as $k=>$v){
-            $orderNum = pdo_getall('ewei_shop_order_goods',array('orderid'=>$v['id']),array('total'));
-            foreach ($orderNum as $key=>$value){
-                $order_Num +=$value['total'];
+        foreach ($order as $k => $v) {
+            $orderNum = pdo_getall('ewei_shop_order_goods', array('orderid' => $v['id']), array('total'));
+            foreach ($orderNum as $key => $value) {
+                $order_Num += $value['total'];
             }
         }
-        $curriculum = count(pdo_getall('ewei_shop_curriculum',array('status'=>1,'openid'=>$_W['openid'])));
+        $curriculum = count(pdo_getall('ewei_shop_curriculum', array('status' => 1, 'openid' => $_W['openid'])));
 
         if ($order_Num >= 2 && $_W['ewei_shopv2_member']['level'] == 0 && $curriculum >= 2 && $upgrade >= 1) {
-          if($_W['ewei_shopv2_member']['fid'] >0){
-                 $f_member = pdo_get('ewei_shop_member', array('id' => $_W['ewei_shopv2_member']['fid']), array('id', 'level', 'invite', 'brokerage', 'fid'));
-                if($f_member['level'] >= 5 ){ 
-                $invite = $f_member['invite'] + 1;
-                 $brokerage = $f_member['brokerage'] + 200;
-             	 pdo_update('ewei_shop_member', array('level' => 1), array('id' => $_W['ewei_shopv2_member']['id']));
-                 $a = pdo_update('ewei_shop_member', array('invite' => $invite, 'brokerage' => $brokerage), array('id' => $_W['ewei_shopv2_member']['fid']));
-          }else{
-                $invite = $f_member['invite'] + 1;
-                $brokerage = $f_member['brokerage'] + 100;
-             	 pdo_update('ewei_shop_member', array('level' => 1), array('id' => $_W['ewei_shopv2_member']['id']));
-                $a = pdo_update('ewei_shop_member', array('invite' => $invite, 'brokerage' => $brokerage), array('id' => $_W['ewei_shopv2_member']['fid']));
-                if ($f_member['level'] < 5) {
-                    $this->acquire($f_member);
-                }   
-          }
-        }else{
-          pdo_update('ewei_shop_member', array('level' => 1), array('id' => $_W['ewei_shopv2_member']['id']));
-          }
+            if ($_W['ewei_shopv2_member']['fid'] > 0) {
+                $f_member = pdo_get('ewei_shop_member', array('id' => $_W['ewei_shopv2_member']['fid']), array('id', 'level', 'invite', 'brokerage', 'fid'));
+                if ($f_member['level'] >= 5) {
+                    $invite = $f_member['invite'] + 1;
+                    $brokerage = $f_member['brokerage'] + 200;
+                    pdo_update('ewei_shop_member', array('level' => 1), array('id' => $_W['ewei_shopv2_member']['id']));
+                    $a = pdo_update('ewei_shop_member', array('invite' => $invite, 'brokerage' => $brokerage), array('id' => $_W['ewei_shopv2_member']['fid']));
+                } else {
+                    $invite = $f_member['invite'] + 1;
+                    $brokerage = $f_member['brokerage'] + 100;
+                    pdo_update('ewei_shop_member', array('level' => 1), array('id' => $_W['ewei_shopv2_member']['id']));
+                    $a = pdo_update('ewei_shop_member', array('invite' => $invite, 'brokerage' => $brokerage), array('id' => $_W['ewei_shopv2_member']['fid']));
+                    if ($f_member['level'] < 5) {
+                        $this->acquire($f_member);
+                    }
+                }
+            } else {
+                pdo_update('ewei_shop_member', array('level' => 1), array('id' => $_W['ewei_shopv2_member']['id']));
+            }
         }
 
         m("order")->setStocksAndCredits($orderid, 3);
