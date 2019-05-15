@@ -1,8 +1,9 @@
 <?php defined('IN_IA') or exit('Access Denied');?><?php (!empty($this) && $this instanceof WeModuleSite || 1) ? (include $this->template('_header', TEMPLATE_INCLUDEPATH)) : (include template('_header', TEMPLATE_INCLUDEPATH));?>
 <link href="<?php  echo EWEI_SHOPV2_LOCAL?>static/css/swiper-3.2.7.min.css" rel="stylesheet">
-
+<link rel="stylesheet" href="https://a.amap.com/jsapi_demos/static/demo-center/css/demo-center.css" />
 <script src="<?php  echo EWEI_SHOPV2_LOCAL?>static/js/dist/swiper/swiper-3.4.0.jquery.min.js"></script>
 <style>
+
     tbody tr td {
         position: relative;
     }
@@ -122,6 +123,10 @@
         box-sizing: border-box !important;
         overflow-x: hidden !important;
     }
+    #container {
+        width: 100%;
+        height: 100%;
+    }
 </style>
 <div class="page-header">
     当前位置：<span class="text-primary"><?php  echo $_GPC['mobile'];?>的健康情况</span>
@@ -130,15 +135,19 @@
     <div class="container">
         <div class="swiper-container swiper1">
             <div class="swiper-wrapper">
-                <div class="swiper-slide selected">会员定位</div>
+                <div class="swiper-slide selected ">会员定位</div>
                 <div class="swiper-slide">会员健康</div>
-
             </div>
         </div>
         <!-- swiper2 -->
         <div class="swiper-container swiper2">
             <div class="swiper-wrapper">
-                <div class="swiper-slide swiper-no-swiping">内容 bvcccccccccccbvb</div>
+                <div class="swiper-slide swiper-no-swiping">
+                    <div style="height: 40px; background: white; padding-top: 10px;">
+                        <a class="btn btn-primary acquire"  href="#" >获取会员当前位置</a>
+                    </div>
+                    <div id="container"></div>
+                </div>
                 <div class="swiper-slide swiper-no-swiping">内容 sdasdssssss</div>
             </div>
         </div>
@@ -146,7 +155,14 @@
     </div>
 
 </div>
+<script src="https://webapi.amap.com/maps?v=1.4.14&key=9b8c7adbb647c3c22f9cb6fbca625cac"></script>
 <script>
+    var map = new AMap.Map('container', {
+        resizeEnable: true, //是否监控地图容器尺寸变化
+        zoom:11, //初始化地图层级
+        center: [116.397428, 39.90923] //初始化地图中心点
+    });
+
     $(function() {
         function setCurrentSlide(ele, index) {
             $(".swiper1 .swiper-slide").removeClass("selected");
@@ -192,6 +208,23 @@
             }
         });
     });
+    function getQueryString(name) {
+        var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i');
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) {
+            return unescape(r[2]);
+        }
+        return null;
+    }
+
+    $('.acquire').click(function () {
+
+        var mobile = getQueryString('mobile');
+        console.log(mobile);
+        $.post("<?php  echo WebUrl('fitness/location')?>",{mobile:mobile},function (res) {
+            
+        })
+    })
 </script>
 <?php (!empty($this) && $this instanceof WeModuleSite || 1) ? (include $this->template('goods/batchcates', TEMPLATE_INCLUDEPATH)) : (include template('goods/batchcates', TEMPLATE_INCLUDEPATH));?>
 <?php (!empty($this) && $this instanceof WeModuleSite || 1) ? (include $this->template('_footer', TEMPLATE_INCLUDEPATH)) : (include template('_footer', TEMPLATE_INCLUDEPATH));?>
