@@ -5,24 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a701d574-fe47-4661-abe0-57512a43e714" name="Default Changelist" comment="Merge branch 'master' of https://github.com/lge244/Nine-long-health&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;addons/ewei_shopv2/core/model/system.php&#10;#&#9;data/tpl/app/ewei_shopv2/default/mobile/member/insurance/backfill.tpl.php&#10;#&#9;data/tpl/web_v3/default/ewei_shopv2/web/goods/tab/basic.tpl.php&#10;#&#9;data/tpl/web_v3/default/ewei_shopv2/web/insurance.tpl.php&#10;#&#9;data/tpl/web_v3/default/ewei_shopv2/web/insurance/share.tpl.php&#10;#&#9;data/tpl/web_v3/default/ewei_shopv2/web/order/op/send.tpl.php">
-      <change afterPath="$PROJECT_DIR$/11.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/addons/ewei_shopv2/core/mobile/order/imei.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/addons/ewei_shopv2/template/mobile/default/order/imei.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/beatHeart.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/health.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/location.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/warning.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addons/ewei_shopv2/core/web/hospital/divided.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/hospital/divided/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/hospital/divided/index.tpl.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/core/mobile/order/op.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/core/mobile/order/op.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/core/mobile/member/reservation.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/core/mobile/member/reservation.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/core/model/system.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/core/model/system.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/core/web/fitness/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/core/web/fitness/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/static/js/app/biz/order/list.js" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/static/js/app/biz/order/list.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/static/js/app/biz/order/op.js" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/static/js/app/biz/order/op.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/admins/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/admins/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/fitness/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/fitness/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/core/web/hospital/reservation.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/core/web/hospital/reservation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/template/mobile/default/member/reservation/backfill.html" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/template/mobile/default/member/reservation/backfill.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/hospital/job/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/hospital/job/post.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/hospital/reservation/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/addons/ewei_shopv2/template/web_v3/hospital/reservation/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/data/config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/admins.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/admins.tpl.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/fitness.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/fitness.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/app/ewei_shopv2/default/mobile/member/reservation/backfill.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/data/tpl/app/ewei_shopv2/default/mobile/member/reservation/backfill.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/hospital/reservation/index.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/data/tpl/web_v3/default/ewei_shopv2/web/hospital/reservation/index.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,7 +36,7 @@
         <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/core/mobile/order/op.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="418">
-              <caret line="89" column="23" lean-forward="true" selection-start-line="89" selection-start-column="23" selection-end-line="89" selection-end-column="23" />
+              <caret line="89" column="23" selection-start-line="89" selection-start-column="23" selection-end-line="89" selection-end-column="23" />
               <folding>
                 <element signature="n#cancel#0;n#Op_EweiShopV2Page#0;n#!!top" />
                 <element signature="n#delete#0;n#Op_EweiShopV2Page#0;n#!!top" />
@@ -69,8 +66,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/template/mobile/default/order/imei.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="607">
-              <caret line="86" column="33" selection-start-line="86" selection-start-column="33" selection-end-line="86" selection-end-column="33" />
+            <state relative-caret-position="695">
+              <caret line="90" column="33" selection-start-line="90" selection-start-column="33" selection-end-line="90" selection-end-column="33" />
               <folding>
                 <element signature="e#759#765#1" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -266,81 +263,6 @@
               <item name="jjjk" type="462c0819:PsiDirectoryNode" />
               <item name="addons" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="jjjk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jjjk" type="462c0819:PsiDirectoryNode" />
-              <item name="addons" type="462c0819:PsiDirectoryNode" />
-              <item name="ewei_shopv2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jjjk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jjjk" type="462c0819:PsiDirectoryNode" />
-              <item name="addons" type="462c0819:PsiDirectoryNode" />
-              <item name="ewei_shopv2" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jjjk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jjjk" type="462c0819:PsiDirectoryNode" />
-              <item name="addons" type="462c0819:PsiDirectoryNode" />
-              <item name="ewei_shopv2" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="mobile" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jjjk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jjjk" type="462c0819:PsiDirectoryNode" />
-              <item name="addons" type="462c0819:PsiDirectoryNode" />
-              <item name="ewei_shopv2" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="mobile" type="462c0819:PsiDirectoryNode" />
-              <item name="order" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jjjk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jjjk" type="462c0819:PsiDirectoryNode" />
-              <item name="addons" type="462c0819:PsiDirectoryNode" />
-              <item name="ewei_shopv2" type="462c0819:PsiDirectoryNode" />
-              <item name="template" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jjjk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jjjk" type="462c0819:PsiDirectoryNode" />
-              <item name="addons" type="462c0819:PsiDirectoryNode" />
-              <item name="ewei_shopv2" type="462c0819:PsiDirectoryNode" />
-              <item name="template" type="462c0819:PsiDirectoryNode" />
-              <item name="mobile" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jjjk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jjjk" type="462c0819:PsiDirectoryNode" />
-              <item name="addons" type="462c0819:PsiDirectoryNode" />
-              <item name="ewei_shopv2" type="462c0819:PsiDirectoryNode" />
-              <item name="template" type="462c0819:PsiDirectoryNode" />
-              <item name="mobile" type="462c0819:PsiDirectoryNode" />
-              <item name="default" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jjjk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jjjk" type="462c0819:PsiDirectoryNode" />
-              <item name="addons" type="462c0819:PsiDirectoryNode" />
-              <item name="ewei_shopv2" type="462c0819:PsiDirectoryNode" />
-              <item name="template" type="462c0819:PsiDirectoryNode" />
-              <item name="mobile" type="462c0819:PsiDirectoryNode" />
-              <item name="default" type="462c0819:PsiDirectoryNode" />
-              <item name="member" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jjjk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jjjk" type="462c0819:PsiDirectoryNode" />
-              <item name="addons" type="462c0819:PsiDirectoryNode" />
-              <item name="ewei_shopv2" type="462c0819:PsiDirectoryNode" />
-              <item name="template" type="462c0819:PsiDirectoryNode" />
-              <item name="mobile" type="462c0819:PsiDirectoryNode" />
-              <item name="default" type="462c0819:PsiDirectoryNode" />
-              <item name="member" type="462c0819:PsiDirectoryNode" />
-              <item name="insurance" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -415,12 +337,12 @@
       <workItem from="1556157204035" duration="235285000" />
       <workItem from="1557017981738" duration="150671000" />
       <workItem from="1557366382459" duration="28990000" />
-      <workItem from="1557794828296" duration="72861000" />
+      <workItem from="1557794828296" duration="73199000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="569265000" />
+    <option name="totallyTimeSpent" value="569603000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -433,15 +355,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1426868" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1426868" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3293011" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32969603" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49960256" visible="true" weight="0.27981293" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49960256" visible="true" weight="0.27981293" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3293011" />
@@ -899,7 +820,7 @@
     <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/core/mobile/order/op.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
-          <caret line="89" column="23" lean-forward="true" selection-start-line="89" selection-start-column="23" selection-end-line="89" selection-end-column="23" />
+          <caret line="89" column="23" selection-start-line="89" selection-start-column="23" selection-end-line="89" selection-end-column="23" />
           <folding>
             <element signature="n#cancel#0;n#Op_EweiShopV2Page#0;n#!!top" />
             <element signature="n#delete#0;n#Op_EweiShopV2Page#0;n#!!top" />
@@ -923,8 +844,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/addons/ewei_shopv2/template/mobile/default/order/imei.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="607">
-          <caret line="86" column="33" selection-start-line="86" selection-start-column="33" selection-end-line="86" selection-end-column="33" />
+        <state relative-caret-position="695">
+          <caret line="90" column="33" selection-start-line="90" selection-start-column="33" selection-end-line="90" selection-end-column="33" />
           <folding>
             <element signature="e#759#765#1" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />

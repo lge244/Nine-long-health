@@ -70,13 +70,23 @@ class Reservation_EweiShopV2Page extends MobileLoginPage
 		exit(show_json(0, ['msg' => '当前预约已进行，无法关闭']));
 	}
 
-	public function backfill()
+	/**
+	 * 反馈
+	 */
+	public function backFill()
 	{
 		global $_GPC;
 		global $_W;
+		$id = $_GPC['id'];
 		if (is_post()) {
-			echo 1;
-			die;
+			$id = $_GPC['id'];
+			$price = $_GPC['price'];
+			$price = pdo_getcolumn('ewei_reservation', ['id' => $id], 'price');
+			if ($price) exit(show_json(1, '已经反馈过，不可再次反馈'));
+			if (empty($id) || empty($price)) exit(show_json(0, '操作异常'));
+			$res = pdo_update('ewei_reservation', ['price' => $price], ['id' => $id]);
+			if (!$res) exit(show_json(0, '反馈失败'));
+			exit(show_json(1, '反馈成功'));
 		}
 		include $this->template();
 	}
