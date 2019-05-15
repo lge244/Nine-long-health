@@ -1,8 +1,8 @@
-<?php defined('IN_IA') or exit('Access Denied');?><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title><?php (!empty($this) && $this instanceof WeModuleSite || 1) ? (include $this->template('_header', TEMPLATE_INCLUDEPATH)) : (include template('_header', TEMPLATE_INCLUDEPATH));?>
+    <title>{template '_header'}
         <style>
             tbody tr td {
                 position: relative;
@@ -93,9 +93,9 @@
                 <div style="width: 100px;">价格</div>
                 <div style="width: 80px;">库存</div>
                 <div style="width: 80px;">销量</div>
-                <?php  if($goodsfrom!='cycle') { ?>
+                {if $goodsfrom!='cycle'}
                 <div style="width:80px;">状态</div>
-                <?php  } ?>
+                {/if}
                 <div class="flex1">属性</div>
                 <div style="width: 120px;">操作</div>
             </div>
@@ -104,10 +104,10 @@
                 <input type="hidden" name="a" value="entry"/>
                 <input type="hidden" name="m" value="ewei_shopv2"/>
                 <input type="hidden" name="do" value="web"/>
-                <input type="hidden" name="r" value="goods.<?php  echo $goodsfrom;?>"/>
+                <input type="hidden" name="r" value="goods.{$goodsfrom}"/>
                 <div class="page-toolbar">
 			<span class="pull-left" style="margin-right:30px;">
-				<a class='btn btn-sm btn-primary' href="<?php  echo webUrl('hospital/add')?>"><i class='fa fa-plus'></i> 添加医院</a>
+				<a class='btn btn-sm btn-primary' href="{php echo webUrl('hospital/add')}"><i class='fa fa-plus'></i> 添加医院</a>
 			</span>
                 </div>
             </form>
@@ -125,21 +125,21 @@
                         </tr>
                         </thead>
                         <tbody>
-                        <?php  if(is_array($list)) { foreach($list as $row) { ?>
+                        {loop $list $row}
                         <tr>
-                            <td><?php  echo $row['id'];?></td>
-                            <td><?php  echo $row['name'];?></td>
-                            <td><?php  echo $row['phone'];?></td>
-                            <td><?php  echo $row['address'];?></td>
+                            <td>{$row['id']}</td>
+                            <td>{$row['name']}</td>
+                            <td>{$row['phone']}</td>
+                            <td>{$row['address']}</td>
                             <td>
                                 <a class='btn  btn-op btn-operation'
-                                   href="<?php  echo webUrl('hospital/edit', array('id' => $row['id']))?>">
+                                   href="{php echo webUrl('hospital/edit', array('id' => $row['id']))}">
 							<span data-toggle="tooltip" data-placement="top" title="" data-original-title="编辑">
 								<i class='icow icow-bianji2'></i>
 							</span>
                                 </a>
                                 <a class='btn  btn-op btn-operation' data-toggle='ajaxRemove'
-                                   href="<?php  echo webUrl('hospital/del', array('id' => $row['id']))?>"
+                                   href="{php echo webUrl('hospital/del', array('id' => $row['id']))}"
                                    data-confirm='确认彻底删除?'>
 							<span data-toggle="tooltip" data-placement="top" title="" data-original-title="删除">
 								<i class='icow icow-shanchu1'></i>
@@ -147,14 +147,14 @@
                                 </a>
                             </td>
                         </tr>
-                        <?php  } } ?>
+                        {/loop}
                         </tbody>
                     </table>
                 </div>
             </div>
         </div>
-        <?php (!empty($this) && $this instanceof WeModuleSite || 1) ? (include $this->template('goods/batchcates', TEMPLATE_INCLUDEPATH)) : (include template('goods/batchcates', TEMPLATE_INCLUDEPATH));?>
-        <?php (!empty($this) && $this instanceof WeModuleSite || 1) ? (include $this->template('_footer', TEMPLATE_INCLUDEPATH)) : (include template('_footer', TEMPLATE_INCLUDEPATH));?>
+        {template 'goods/batchcates'}
+        {template '_footer'}
         <script>
 
         </script></title>
