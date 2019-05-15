@@ -181,13 +181,14 @@
 	</div>
 </div>
 <script src="https://webapi.amap.com/maps?v=1.4.14&key=9b8c7adbb647c3c22f9cb6fbca625cac"></script>
+<script src="//webapi.amap.com/ui/1.0/main.js?v=1.0.11"></script>
 <script>
 	var map = new AMap.Map('container', {
 		resizeEnable: true, //是否监控地图容器尺寸变化
 		zoom:11, //初始化地图层级
-		center: [116.397428, 39.90923] //初始化地图中心点
+		center: [116.397428, 39.90923], //初始化地图中心点
 	});
-
+	
 	$(function() {
 		function setCurrentSlide(ele, index) {
 			$(".swiper1 .swiper-slide").removeClass("selected");

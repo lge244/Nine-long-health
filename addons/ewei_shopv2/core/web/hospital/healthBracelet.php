@@ -19,11 +19,11 @@ class HealthBracelet_EweiShopV2Page extends WebPage
 			$mobile = $_GPC['mobile'];
 			if (empty($mobile)) exit(show_json(0, '手机号码错误'));
 			$imei = pdo_getcolumn('member_wristband', ['mobile' => $mobile], 'imei');
-			$info = json_decode($this->requestApi('357190489608372'), true);
+			$info = json_decode($this->requestApi($imei), true);
 			if ($info['code'] != '0000') {
 				exit(show_json(0, $info['message']));
 			}
-			$res = pdo_fetch("select * from `ims_wristband_location` where imei = '357190489608372' order by id desc");
+			$res = pdo_fetch("select * from `ims_wristband_location` where imei = ". $imei ." order by id desc");
 			exit(show_json(1, $res));
 		}
 		// 会员健康列表
