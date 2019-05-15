@@ -14,26 +14,14 @@ class HealthBracelet_EweiShopV2Page extends WebPage
 	 */
 	public function main()
 	{
-		$info = pdo_get('ewei_hospital_divided');
-		include $this->template('hospital/divided/index');
+		if (is_ajax()) {
+
+		}
+		include $this->template('hospital/health_bracelet/index');
 	}
 
-	/**
-	 * 保存信息
-	 */
-	public function save()
+	public function health()
 	{
-		global $_GPC;
-		$data = [
-			'manager'     => $_GPC['manager'],
-			'recommender' => $_GPC['recommender'],
-		];
-		$id = $_GPC['divided_id'];
-		if (empty($data['manager']) || empty($data['recommender'])) {
-			exit(show_json(0,'请将信息填写完整'));
-		}
-		$res = pdo_update('ewei_hospital_divided', $data, ['id' => $id]);
-		if (!$res) exit(show_json(0,'更新失败'));
-		exit(show_json(1,'更新成功'));
+				
 	}
 }
