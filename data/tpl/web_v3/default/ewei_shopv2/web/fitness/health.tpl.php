@@ -2,6 +2,7 @@
 <link href="<?php  echo EWEI_SHOPV2_LOCAL?>static/css/swiper-3.2.7.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://a.amap.com/jsapi_demos/static/demo-center/css/demo-center.css" />
 <script src="<?php  echo EWEI_SHOPV2_LOCAL?>static/js/dist/swiper/swiper-3.4.0.jquery.min.js"></script>
+<script src="<?php  echo EWEI_SHOPV2_LOCAL?>static/js/dist/highcharts/highcharts.js"></script>
 <style>
 
     tbody tr td {
@@ -117,7 +118,7 @@
     }
     .swiper2 .swiper-slide {
         height: calc(100vh - 50px);
-        background-color: #ccc;
+        background-color: white;
         color: #fff;
         text-align: center;
         box-sizing: border-box !important;
@@ -126,6 +127,30 @@
     #container {
         width: 100%;
         height: 100%;
+    }
+    #container2{
+        width: 100%;
+        height: 40%;
+    }
+    #container3{
+        width: 100%;
+        height: 40%;
+    }
+    .amap-icon img {
+        width: 25px;
+        height: 34px;
+    }
+
+    .amap-marker-label{
+        border: 0;
+        background-color: transparent;
+    }
+
+    .info{
+        position: relative;
+        top: 0;
+        right: 0;
+        min-width: 0;
     }
 </style>
 <div class="page-header">
@@ -148,7 +173,14 @@
                     </div>
                     <div id="container"></div>
                 </div>
-                <div class="swiper-slide swiper-no-swiping">内容 sdasdssssss</div>
+                <div class="swiper-slide swiper-no-swiping">
+                    <div style="height: 40px; background: white; padding-top: 10px;">
+                        <a class="btn btn-primary acquire2"  href="#" >获取会员当前健康情况</a>
+                    </div>
+                    <div id="container2" style=""></div>
+                    <div id="container3" style="margin-top: 10%"></div>
+
+                </div>
             </div>
         </div>
 
@@ -157,12 +189,31 @@
 </div>
 <script src="https://webapi.amap.com/maps?v=1.4.14&key=9b8c7adbb647c3c22f9cb6fbca625cac"></script>
 <script>
+
     var map = new AMap.Map('container', {
-        resizeEnable: true, //是否监控地图容器尺寸变化
-        zoom:11, //初始化地图层级
-        center: [116.397428, 39.90923] //初始化地图中心点
+        resizeEnable: true,
+        center:[<?php  echo $location['lon']?>, <?php  echo $location['lat']?>],
+        zoom: 13
     });
 
+    var marker = new AMap.Marker({
+        position: map.getCenter(),
+        icon: '//a.amap.com/jsapi_demos/static/demo-center/icons/poi-marker-default.png',
+        offset: new AMap.Pixel(-13, -30)
+    });
+
+    marker.setMap(map);
+
+    // 设置鼠标划过点标记显示的文字提示
+    marker.setTitle('我是marker的title');
+
+    // 设置label标签
+    // label默认蓝框白底左上角显示，样式className为：amap-marker-label
+    marker.setLabel({
+        offset: new AMap.Pixel(20, 20),  //设置文本标注偏移量
+        content: "<div class='info' style='color: #0e0e0e'>会员当前所在的位置</div>", //设置文本标注内容
+        direction: 'right' //设置文本标注方位
+    });
     $(function() {
         function setCurrentSlide(ele, index) {
             $(".swiper1 .swiper-slide").removeClass("selected");
@@ -218,13 +269,143 @@
     }
 
     $('.acquire').click(function () {
-
         var mobile = getQueryString('mobile');
         console.log(mobile);
         $.post("<?php  echo WebUrl('fitness/location')?>",{mobile:mobile},function (res) {
-            
-        })
+            if (res.code == 0){
+                tip.msgbox.suc(res.msg);
+                window.location.reload();
+            }else{
+                tip.msgbox.err(res.msg);
+            }
+        },'json')
     })
+</script>
+<script>
+    $('.acquire2').click(function () {
+        var mobile = getQueryString('mobile');
+        console.log(mobile);
+        $.post("<?php  echo WebUrl('fitness/gainhealth')?>",{mobile:mobile},function (res) {
+            if (res.code == 0){
+                tip.msgbox.suc(res.msg);
+                window.location.reload();
+            }else{
+                tip.msgbox.err(res.msg);
+            }
+        },'json')
+    });
+
+    Highcharts.chart('container2', {
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: '该会员最新健康数据'
+        },
+        subtitle: {
+            text: '该数据通过用户上次测量得到'
+        },
+        xAxis: {
+            type: 'category'
+        },
+        yAxis: {
+            title: {
+                text: '健康值'
+            }
+        },
+        legend: {
+            enabled: false
+        },
+        plotOptions: {
+            series: {
+                borderWidth: 0,
+                dataLabels: {
+                    enabled: true,
+                    format: '{point.y:.1f}'
+                }
+            }
+        },
+
+        series: [{
+            name: '浏览健康数据',
+            colorByPoint: true,
+            data: [{
+                name: '心率',
+                y: <?php  echo $health['heartRate']?>,
+            }, {
+                name: '低压',
+                y: <?php  echo $health['dbp']?>,
+            }, {
+                name: '高压',
+                y: <?php  echo $health['sdp']?>,
+            }, {
+                name: '血糖',
+                y:<?php  if($health['bloodSugar'] == '')echo 0; else echo $health['bloodSugar'] ?>,
+            }, {
+                name: '血氧',
+                y: <?php  echo $health['oxygen']?>,
+            }]
+        }]
+    });
+
+</script>
+<script>
+    var chart = Highcharts.chart('container3', {
+        title: {
+            text: '该会员一周的健康情况'
+        },
+        subtitle: {
+            text: '数据来源：九久健康运动手环'
+        },
+        yAxis: {
+            title: {
+                text: '健康值'
+            }
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'middle'
+        },
+        plotOptions: {
+            series: {
+                label: {
+                    connectorAllowed: false
+                },
+                pointStart: 1
+            }
+        },
+        series: [{
+            name: '心率',
+            data: [<?php  echo  $heartRate['0'] ?>, <?php  echo  $heartRate['1'] ?>, <?php  echo  $heartRate['2'] ?>, <?php  echo  $heartRate['3'] ?>, <?php  echo  $heartRate['4'] ?>, <?php  echo  $heartRate['5'] ?>, <?php  echo  $heartRate['6'] ?>]
+        }, {
+            name: '低压',
+            data: [<?php  echo  $dbp['0'] ?>, <?php  echo  $dbp['1'] ?>, <?php  echo  $dbp['2'] ?>, <?php  echo  $dbp['3'] ?>, <?php  echo  $dbp['4'] ?>, <?php  echo  $dbp['5'] ?>, <?php  echo  $dbp['6'] ?>]
+        }, {
+            name: '高压',
+            data:  [<?php  echo  $sdp['0'] ?>, <?php  echo  $sdp['1'] ?>, <?php  echo  $sdp['2'] ?>, <?php  echo  $sdp['3'] ?>, <?php  echo  $sdp['4'] ?>, <?php  echo  $sdp['5'] ?>, <?php  echo  $sdp['6'] ?>]
+        }, {
+            name: '血糖',
+            data:  [<?php  echo  $bloodSugar['0'] ?>, <?php  echo  $bloodSugar['1'] ?>, <?php  echo  $bloodSugar['2'] ?>, <?php  echo  $bloodSugar['3'] ?>, <?php  echo  $bloodSugar['4'] ?>, <?php  echo  $bloodSugar['5'] ?>, <?php  echo  $bloodSugar['6'] ?>]
+        }, {
+            name: '血氧',
+            data:  [<?php  echo  $oxygen['0'] ?>, <?php  echo  $oxygen['1'] ?>, <?php  echo  $oxygen['2'] ?>, <?php  echo  $oxygen['3'] ?>, <?php  echo  $oxygen['4'] ?>, <?php  echo  $oxygen['5'] ?>, <?php  echo  $oxygen['6'] ?>]
+        }],
+        responsive: {
+            rules: [{
+                condition: {
+                    maxWidth: 500
+                },
+                chartOptions: {
+                    legend: {
+                        layout: 'horizontal',
+                        align: 'center',
+                        verticalAlign: 'bottom'
+                    }
+                }
+            }]
+        }
+    });
 </script>
 <?php (!empty($this) && $this instanceof WeModuleSite || 1) ? (include $this->template('goods/batchcates', TEMPLATE_INCLUDEPATH)) : (include template('goods/batchcates', TEMPLATE_INCLUDEPATH));?>
 <?php (!empty($this) && $this instanceof WeModuleSite || 1) ? (include $this->template('_footer', TEMPLATE_INCLUDEPATH)) : (include template('_footer', TEMPLATE_INCLUDEPATH));?>
