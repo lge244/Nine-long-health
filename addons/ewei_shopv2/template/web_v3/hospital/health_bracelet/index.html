@@ -187,7 +187,6 @@
 	</div>
 </div>
 <script src="https://webapi.amap.com/maps?v=1.4.14&key=9b8c7adbb647c3c22f9cb6fbca625cac"></script>
-<script src="//webapi.amap.com/ui/1.0/main.js?v=1.0.11"></script>
 <script>
 	var map = new AMap.Map('container', {
 		resizeEnable: true, //是否监控地图容器尺寸变化
@@ -276,14 +275,20 @@
 	$('.acquire2').click(function () {
 		var mobile = getQueryString('mobile');
 		console.log(mobile);
-		$.post("{php echo WebUrl('fitness/gainhealth')}",{mobile:mobile},function (res) {
-			if (res.code == 0){
-				tip.msgbox.suc(res.msg);
-				window.location.reload();
-			}else{
-				tip.msgbox.err(res.msg);
+		$.ajax({
+			type : 'post',
+			url : '{php echo webUrl("hospital/healthBracelet/health")}',
+			data : {mobile : mobile},
+			dataType : 'json',
+			success : function (data) {
+				if (data.status){
+					console.log(data.result);
+				} else {
+					tip.msgbox.err(data.result.message);
+					return false;
+				}
 			}
-		},'json')
+		});
 	});
 
 	Highcharts.chart('container2', {
@@ -320,23 +325,29 @@
 		series: [{
 			name: '浏览健康数据',
 			colorByPoint: true,
-			data: [{
-				name: '心率',
-				y: {php echo $health['heartRate']},
-			}, {
-				name: '低压',
-				y: {php echo $health['dbp']},
-			}, {
-				name: '高压',
-				y: {php echo $health['sdp']},
-			}, {
-				name: '血糖',
-				y:{php if($health['bloodSugar'] == '')echo 0; else echo $health['bloodSugar'] },
-	}, {
-		name: '血氧',
-			y: {php echo $health['oxygen']},
-	}]
-	}]
+			data: [
+				{
+					name: '心率',
+					y: {php echo $health['heartRate']},
+				},
+				{
+					name: '低压',
+					y: {php echo $health['dbp']},
+				},
+				{
+					name: '高压',
+					y: {php echo $health['sdp']},
+				},
+				{
+					name: '血糖',
+					y:{php if($health['bloodSugar'] == '')echo 0; else echo $health['bloodSugar']},
+				},
+				{
+					name: '血氧',
+					y: {php echo $health['oxygen']},
+				}
+			]
+		}]
 	});
 
 </script>

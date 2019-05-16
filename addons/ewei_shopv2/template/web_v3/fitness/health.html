@@ -1,10 +1,7 @@
-{template '_header'}
 <link href="{php echo EWEI_SHOPV2_LOCAL}static/css/swiper-3.2.7.min.css" rel="stylesheet">
-<link rel="stylesheet" href="https://a.amap.com/jsapi_demos/static/demo-center/css/demo-center.css" />
+<link rel="stylesheet" href="https://a.amap.com/jsapi_demos/static/demo-center/css/demo-center.css"/>
 <script src="{php echo EWEI_SHOPV2_LOCAL}static/js/dist/swiper/swiper-3.4.0.jquery.min.js"></script>
-<script src="{php echo EWEI_SHOPV2_LOCAL}static/js/dist/highcharts/highcharts.js"></script>
 <style>
-
     tbody tr td {
         position: relative;
     }
@@ -84,16 +81,19 @@
 </style>
 <style>
     .container {
-        /*width: 100%;*/
+        width: 100%;
         border: 1px solid #ccc;
     }
+
     .swiper1 {
         width: 100%;
     }
+
     .swiper1 .selected {
         color: #ec5566;
         border-bottom: 2px solid #ec5566;
     }
+
     .swiper1 .swiper-slide {
         text-align: center;
         font-size: 16px;
@@ -113,44 +113,23 @@
         align-items: center;
         cursor: pointer;
     }
+
     .swiper2 {
         width: 100%;
     }
+
     .swiper2 .swiper-slide {
         height: calc(100vh - 50px);
-        background-color: white;
+        background-color: #ccc;
         color: #fff;
         text-align: center;
         box-sizing: border-box !important;
         overflow-x: hidden !important;
     }
+
     #container {
         width: 100%;
         height: 100%;
-    }
-    #container2{
-        width: 100%;
-        height: 40%;
-    }
-    #container3{
-        width: 100%;
-        height: 40%;
-    }
-    .amap-icon img {
-        width: 25px;
-        height: 34px;
-    }
-
-    .amap-marker-label{
-        border: 0;
-        background-color: transparent;
-    }
-
-    .info{
-        position: relative;
-        top: 0;
-        right: 0;
-        min-width: 0;
     }
 </style>
 <div class="page-header">
