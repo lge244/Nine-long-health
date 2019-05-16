@@ -19,6 +19,8 @@ class HealthBracelet_EweiShopV2Page extends WebPage
 		$mobile = $_GPC['mobile'];
 		if (empty($mobile)) exit(show_json(0, '手机号码错误'));
 		$imei = pdo_getcolumn('member_wristband', ['mobile' => $mobile], 'imei');
+		// 最后一次请求定位地址
+		$location = pdo_fetch("select * from `ims_wristband_location` where imei = " . $imei . " order by id desc");
 		if (is_ajax()) {
 			$info = json_decode($this->requestApi($imei, 'http://api.jiai.pro:8080/jiai/location'), true);
 			if ($info['code'] != '0000') {
