@@ -20,7 +20,7 @@ class HealthBracelet_EweiShopV2Page extends WebPage
 			$mobile = $_GPC['mobile'];
 			if (empty($mobile)) exit(show_json(0, '手机号码错误'));
 			$imei = pdo_getcolumn('member_wristband', ['mobile' => $mobile], 'imei');
-			$info = json_decode($this->requestApi($imei), true);
+			$info = json_decode($this->requestApi($imei, 'http://api.jiai.pro:8080/jiai/location'), true);
 			if ($info['code'] != '0000') {
 				exit(show_json(0, $info['message']));
 			}
@@ -42,12 +42,12 @@ class HealthBracelet_EweiShopV2Page extends WebPage
 	 * @param string $imei 串号
 	 * @return bool|string
 	 */
-	public function requestApi($imei = '')
+	public function requestApi($imei = '', $url = '')
 	{
 		$curl = curl_init();
 		curl_setopt_array($curl, [
 			CURLOPT_PORT           => "8080",
-			CURLOPT_URL            => "http://api.jiai.pro:8080/jiai/location",
+			CURLOPT_URL            => $url,
 			CURLOPT_RETURNTRANSFER => true,
 			CURLOPT_ENCODING       => "",
 			CURLOPT_MAXREDIRS      => 10,
