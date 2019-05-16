@@ -192,7 +192,7 @@
 
     var map = new AMap.Map('container', {
         resizeEnable: true,
-        center:[{php echo $location['lon']}, {php echo $location['lat']}],
+        center:[{php if($location['lon'] == '')echo 0; else echo $location['lon'] },{php if($location['lat'] == '')echo 0; else echo $location['lat'] }],
         zoom: 13
     });
 
@@ -331,19 +331,19 @@
             colorByPoint: true,
             data: [{
                 name: '心率',
-                y: {php echo $health['heartRate']},
+                y: {php if($health['heartRate'] == 0)echo 0; else echo $health['heartRate']},
             }, {
                 name: '低压',
-                y: {php echo $health['dbp']},
+                y: {php if($health['dbp'] == 0)echo 0; else echo $health['dbp']},
             }, {
                 name: '高压',
-                y: {php echo $health['sdp']},
+                y: {php if($health['sdp'] == 0)echo 0; else echo $health['sdp']},
             }, {
                 name: '血糖',
-                y:{php if($health['bloodSugar'] == '')echo 0; else echo $health['bloodSugar'] },
+                y:{php if($health['bloodSugar'] == '')echo 0; else echo $health['bloodSugar']},
             }, {
                 name: '血氧',
-                y: {php echo $health['oxygen']},
+                y: {php if($health['oxygen'] == 0)echo 0; else echo $health['oxygen']},
             }]
         }]
     });
