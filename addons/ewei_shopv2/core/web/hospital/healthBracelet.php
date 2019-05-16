@@ -15,17 +15,6 @@ class HealthBracelet_EweiShopV2Page extends WebPage
 	 */
 	public function main()
 	{
-<<<<<<< HEAD
-		if (is_ajax()) {
-
-		}
-		include $this->template('hospital/health_bracelet/index');
-	}
-
-	public function health()
-	{
-				
-=======
 		global $_GPC;
 		if (is_ajax()) {
 			$mobile = $_GPC['mobile'];
@@ -90,6 +79,5 @@ class HealthBracelet_EweiShopV2Page extends WebPage
 		} else {
 			return $response;
 		}
->>>>>>> 8ac66f1963524d3c27917194669381290599870b
 	}
 }
