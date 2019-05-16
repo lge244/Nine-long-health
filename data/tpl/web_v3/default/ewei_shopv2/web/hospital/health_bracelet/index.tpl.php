@@ -1,7 +1,8 @@
 <?php defined('IN_IA') or exit('Access Denied');?><?php (!empty($this) && $this instanceof WeModuleSite || 1) ? (include $this->template('_header', TEMPLATE_INCLUDEPATH)) : (include template('_header', TEMPLATE_INCLUDEPATH));?>
 <link href="<?php  echo EWEI_SHOPV2_LOCAL?>static/css/swiper-3.2.7.min.css" rel="stylesheet">
-<link rel="stylesheet" href="https://a.amap.com/jsapi_demos/static/demo-center/css/demo-center.css" />
+<link rel="stylesheet" href="https://a.amap.com/jsapi_demos/static/demo-center/css/demo-center.css"/>
 <script src="<?php  echo EWEI_SHOPV2_LOCAL?>static/js/dist/swiper/swiper-3.4.0.jquery.min.js"></script>
+<script src="<?php  echo EWEI_SHOPV2_LOCAL?>static/js/dist/highcharts/highcharts.js"></script>
 <style>
 	tbody tr td {
 		position: relative;
@@ -189,11 +190,29 @@
 <script src="https://webapi.amap.com/maps?v=1.4.14&key=9b8c7adbb647c3c22f9cb6fbca625cac"></script>
 <script>
 	var map = new AMap.Map('container', {
-		resizeEnable: true, //是否监控地图容器尺寸变化
-		zoom:11, //初始化地图层级
-		center: [116.397428, 39.90923], //初始化地图中心点
+		resizeEnable: true,
+		center:[<?php  if($location['lon'] == '')echo 0; else echo $location['lon'] ?>,<?php  if($location['lat'] == '')echo 0; else echo $location['lat'] ?>],
+	zoom: 13
 	});
-	
+
+	var marker = new AMap.Marker({
+		position: map.getCenter(),
+		icon: '//a.amap.com/jsapi_demos/static/demo-center/icons/poi-marker-default.png',
+		offset: new AMap.Pixel(-13, -30)
+	});
+
+	marker.setMap(map);
+
+	// 设置鼠标划过点标记显示的文字提示
+	marker.setTitle('我是marker的title');
+
+	// 设置label标签
+	// label默认蓝框白底左上角显示，样式className为：amap-marker-label
+	marker.setLabel({
+		offset: new AMap.Pixel(20, 20),  //设置文本标注偏移量
+		content: "<div class='info' style='color: #0e0e0e'>会员当前所在的位置</div>", //设置文本标注内容
+		direction: 'right' //设置文本标注方位
+	});
 	$(function() {
 		function setCurrentSlide(ele, index) {
 			$(".swiper1 .swiper-slide").removeClass("selected");

@@ -1,6 +1,8 @@
-<?php defined('IN_IA') or exit('Access Denied');?><link href="<?php  echo EWEI_SHOPV2_LOCAL?>static/css/swiper-3.2.7.min.css" rel="stylesheet">
+<?php defined('IN_IA') or exit('Access Denied');?><?php (!empty($this) && $this instanceof WeModuleSite || 1) ? (include $this->template('_header', TEMPLATE_INCLUDEPATH)) : (include template('_header', TEMPLATE_INCLUDEPATH));?>
+<link href="<?php  echo EWEI_SHOPV2_LOCAL?>static/css/swiper-3.2.7.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://a.amap.com/jsapi_demos/static/demo-center/css/demo-center.css"/>
 <script src="<?php  echo EWEI_SHOPV2_LOCAL?>static/js/dist/swiper/swiper-3.4.0.jquery.min.js"></script>
+<script src="<?php  echo EWEI_SHOPV2_LOCAL?>static/js/dist/highcharts/highcharts.js"></script>
 <style>
     tbody tr td {
         position: relative;

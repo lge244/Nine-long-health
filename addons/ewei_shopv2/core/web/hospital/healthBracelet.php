@@ -31,7 +31,13 @@ class HealthBracelet_EweiShopV2Page extends WebPage
 		$health = pdo_fetch("select * from `ims_wristband_health` where imei = " . $imei . " order by id desc");
 		$week_health = pdo_getall('wristband_health', ['imei' => $imei], [], '', 'id desc', [7]);
 		sort($week_health);
-		dump($week_health);
+		foreach ($week_health as $k=>$v){
+			$heartRate[$k] = (int)$v['heartRate'];
+			$dbp[$k] = (int)$v['dbp'];
+			$sdp[$k] = (int)$v['sdp'];
+			$bloodSugar[$k] = (int)$v['bloodSugar'];
+			$oxygen[$k] = (int)$v['oxygen'];
+		}
 		include $this->template('hospital/health_bracelet/index');
 	}
 
