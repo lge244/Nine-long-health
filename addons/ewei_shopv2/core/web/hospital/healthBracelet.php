@@ -3,9 +3,10 @@ if (!(defined('IN_IA'))) {
 	exit('Access Denied');
 }
 
+
 /**
- * 医院列表管理
- * Class Index_EweiShopV2Page
+ * 获取会员健康和定位信息
+ * Class HealthBracelet_EweiShopV2Page
  */
 class HealthBracelet_EweiShopV2Page extends WebPage
 {
